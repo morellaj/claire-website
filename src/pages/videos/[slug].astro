@@ -34,12 +34,19 @@ const formattedDate = new Date(video.date).toLocaleDateString("en-US", {
   <p class="video-date">posted {formattedDate}</p>
 
   <div class="video-wrap">
-    <iframe
-      src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}`}
-      title={video.title}
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+    {video.youtubeId ? (
+      <iframe
+        src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}`}
+        title={video.title}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    ) : (
+      <video controls width="100%" height="100%">
+        <source src={video.videoPath} />
+        Your browser does not support the video tag.
+      </video>
+    )}
   </div>
 
   <div class="watching-row">
@@ -74,20 +81,17 @@ const formattedDate = new Date(video.date).toLocaleDateString("en-US", {
   .video-title { font-size: 2.25rem; margin: 0.5rem 0 0.25rem; }
   .video-date { color: var(--ink); opacity: 0.6; margin: 0 0 1.5rem; }
   .video-wrap {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
     background: #000;
     border-radius: 16px;
     overflow: hidden;
     border: 4px solid var(--pink-accent);
     box-shadow: 0 8px 0 var(--pink-bubble), 0 14px 30px rgba(0,0,0,0.15);
   }
-  .video-wrap iframe {
-    position: absolute;
-    inset: 0;
+  .video-wrap iframe,
+  .video-wrap video {
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: block;
     border: 0;
   }
   .watching-row {
