@@ -1,8 +1,9 @@
 ---
 interface Props {
   title: string;
+  showPeekers?: boolean;
 }
-const { title } = Astro.props;
+const { title, showPeekers = true } = Astro.props;
 ---
 <html lang="en">
   <head>
@@ -11,44 +12,222 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Fredoka:wght@500;600;700&family=Quicksand:wght@400;500;600&display=swap"
+    />
     <style is:global>
       :root {
-        --fg: #1a1a1a;
-        --muted: #666;
-        --bg: #fafafa;
+        --pink-bg: #FFD9EC;
+        --pink-bubble: #FFB6D9;
+        --pink-accent: #FF4FA3;
+        --cream: #FFF8F3;
+        --ink: #3B1F33;
+        --lavender: #D6B8FF;
+        --capybara: #C4936B;
       }
       * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
       body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        max-width: 720px;
+        font-family: "Quicksand", -apple-system, sans-serif;
+        font-weight: 500;
+        color: var(--ink);
+        background: var(--pink-bg);
+        background-image:
+          radial-gradient(circle at 20% 10%, #ffffff55 0 2px, transparent 3px),
+          radial-gradient(circle at 80% 30%, #ffffff55 0 2px, transparent 3px),
+          radial-gradient(circle at 40% 70%, #ffffff55 0 2px, transparent 3px),
+          radial-gradient(circle at 90% 85%, #ffffff55 0 2px, transparent 3px),
+          linear-gradient(180deg, var(--pink-bg) 0%, #FFC4DE 100%);
+        min-height: 100vh;
+        line-height: 1.5;
+        overflow-x: hidden;
+      }
+      h1, h2, h3 {
+        font-family: "Fredoka", sans-serif;
+        font-weight: 700;
+        color: var(--pink-accent);
+      }
+      a { color: var(--pink-accent); }
+
+      /* --- Header --- */
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(255, 217, 236, 0.85);
+        backdrop-filter: blur(8px);
+        padding: 0.75rem 1.25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px dashed var(--pink-accent);
+      }
+      .site-title {
+        font-family: "Pacifico", cursive;
+        font-size: 1.75rem;
+        color: var(--pink-accent);
+        text-decoration: none;
+        text-shadow: 2px 2px 0 #fff;
+        cursor: pointer;
+        user-select: none;
+      }
+      .site-title .heart { color: #ff1f7a; display: inline-block; animation: heartbeat 1.2s ease-in-out infinite; }
+      @keyframes heartbeat {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+      }
+      .site-nav a {
+        font-family: "Fredoka", sans-serif;
+        font-weight: 600;
+        color: var(--ink);
+        text-decoration: none;
+        margin-left: 1rem;
+      }
+      .site-nav a:hover { color: var(--pink-accent); }
+
+      /* --- Content container --- */
+      main {
+        max-width: 960px;
         margin: 0 auto;
-        padding: 2rem 1.25rem 4rem;
-        color: var(--fg);
-        background: var(--bg);
-        line-height: 1.55;
-      }
-      a { color: inherit; }
-      h1 { margin-top: 0; }
-      nav a { margin-right: 1rem; color: var(--muted); text-decoration: none; }
-      nav a:hover { color: var(--fg); }
-      .video-wrap {
+        padding: 1.5rem 1.25rem 4rem;
         position: relative;
-        padding-bottom: 56.25%;
-        height: 0;
-        margin: 1.5rem 0;
-        background: #000;
+        z-index: 1;
       }
-      .video-wrap iframe {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
+
+      /* --- Peekers (page-edge characters) --- */
+      .peeker {
+        position: fixed;
+        z-index: 2;
+        pointer-events: none;
+        width: 120px;
+        opacity: 0.95;
+      }
+      .peeker.top-right { top: 70px; right: -20px; animation: swayR 4s ease-in-out infinite; }
+      .peeker.mid-left { top: 45%; left: -30px; animation: swayL 5s ease-in-out infinite; }
+      .peeker.bottom-right { bottom: 20px; right: 10px; animation: bounce 2.5s ease-in-out infinite; width: 90px; }
+      .peeker.bottom-left { bottom: 30px; left: 10px; animation: bounce 3s ease-in-out infinite; width: 100px; }
+      @keyframes swayR {
+        0%, 100% { transform: translateX(0) rotate(-4deg); }
+        50% { transform: translateX(-12px) rotate(4deg); }
+      }
+      @keyframes swayL {
+        0%, 100% { transform: translateX(0) rotate(4deg); }
+        50% { transform: translateX(12px) rotate(-4deg); }
+      }
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      @media (max-width: 640px) {
+        .peeker { width: 70px; }
+        .peeker.bottom-right, .peeker.bottom-left { width: 60px; }
+      }
+
+      /* --- Sparkle cursor (pseudo) --- */
+      .sparkle {
+        position: fixed;
+        pointer-events: none;
+        width: 14px;
+        height: 14px;
+        z-index: 9999;
+        animation: sparkle-fade 800ms forwards;
+      }
+      @keyframes sparkle-fade {
+        0% { opacity: 1; transform: scale(1) rotate(0); }
+        100% { opacity: 0; transform: scale(0.2) rotate(180deg); }
+      }
+
+      /* --- Footer --- */
+      footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        color: var(--ink);
+        font-family: "Fredoka", sans-serif;
+        opacity: 0.7;
       }
     </style>
   </head>
   <body>
-    <nav><a href="/">home</a></nav>
-    <slot />
+    <header class="site-header">
+      <a href="/" class="site-title" id="site-title">claire <span class="heart">♡</span> studio</a>
+      <nav class="site-nav">
+        <a href="/">home</a>
+      </nav>
+    </header>
+
+    {showPeekers && (
+      <>
+        <img class="peeker top-right" src="/images/pusheen-1.gif" alt="" aria-hidden="true" />
+        <img class="peeker mid-left" src="/images/capybara-3.gif" alt="" aria-hidden="true" />
+        <img class="peeker bottom-right" src="/images/pusheen-2.gif" alt="" aria-hidden="true" />
+        <img class="peeker bottom-left" src="/images/capybara-1.gif" alt="" aria-hidden="true" />
+      </>
+    )}
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      made with ♡ by Claire · powered by Pusheen &amp; capybaras
+    </footer>
+
+    <script>
+      // Sparkle cursor trail
+      const sparkleChars = ["✨", "⭐", "♡", "🎀"];
+      let lastSparkle = 0;
+      document.addEventListener("mousemove", (e) => {
+        const now = Date.now();
+        if (now - lastSparkle < 80) return;
+        lastSparkle = now;
+        const s = document.createElement("span");
+        s.className = "sparkle";
+        s.textContent = sparkleChars[Math.floor(Math.random() * sparkleChars.length)];
+        s.style.left = e.clientX + "px";
+        s.style.top = e.clientY + "px";
+        document.body.appendChild(s);
+        setTimeout(() => s.remove(), 800);
+      });
+
+      // Easter egg: click logo 5 times → capybara rain
+      const title = document.getElementById("site-title");
+      let clicks = 0;
+      let clickTimer: ReturnType<typeof setTimeout> | null = null;
+      title?.addEventListener("click", (e) => {
+        e.preventDefault();
+        clicks++;
+        if (clickTimer) clearTimeout(clickTimer);
+        clickTimer = setTimeout(() => { clicks = 0; }, 2000);
+        if (clicks >= 5) {
+          clicks = 0;
+          capybaraRain();
+        } else {
+          window.location.href = "/";
+        }
+      });
+      function capybaraRain() {
+        const imgs = ["/images/capybara-1.gif", "/images/capybara-2.gif", "/images/capybara-3.gif", "/images/capybara-4.gif"];
+        for (let i = 0; i < 25; i++) {
+          const c = document.createElement("img");
+          c.src = imgs[i % imgs.length];
+          c.style.position = "fixed";
+          c.style.top = "-100px";
+          c.style.left = Math.random() * 100 + "vw";
+          c.style.width = 50 + Math.random() * 60 + "px";
+          c.style.zIndex = "9998";
+          c.style.pointerEvents = "none";
+          c.style.transition = "transform 3s linear, opacity 3s linear";
+          document.body.appendChild(c);
+          setTimeout(() => {
+            c.style.transform = `translateY(${window.innerHeight + 200}px) rotate(${Math.random() * 720 - 360}deg)`;
+            c.style.opacity = "0";
+          }, 20 + i * 40);
+          setTimeout(() => c.remove(), 4000 + i * 40);
+        }
+      }
+    </script>
   </body>
 </html>

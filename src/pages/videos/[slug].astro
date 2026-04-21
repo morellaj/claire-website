@@ -1,0 +1,125 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { videos, sortedVideos, type Video } from "../../data/videos";
+
+export function getStaticPaths() {
+  const sorted = sortedVideos();
+  return sorted.map((v, i) => ({
+    params: { slug: v.slug },
+    props: {
+      video: v,
+      prev: sorted[i + 1] ?? null,
+      next: sorted[i - 1] ?? null,
+    },
+  }));
+}
+
+interface Props {
+  video: Video;
+  prev: Video | null;
+  next: Video | null;
+}
+const { video, prev, next } = Astro.props;
+
+const formattedDate = new Date(video.date).toLocaleDateString("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+});
+---
+<Layout title={`${video.title} · claire ♡ studio`}>
+  <a href="/" class="back-link">← back to videos</a>
+
+  <h1 class="video-title">{video.title}</h1>
+  <p class="video-date">posted {formattedDate}</p>
+
+  <div class="video-wrap">
+    <iframe
+      src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}`}
+      title={video.title}
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <div class="watching-row">
+    <img src="/images/capybara-pusheen.gif" alt="" width="120" />
+    <span>watching together 🍿</span>
+  </div>
+
+  <div class="description-card">
+    <p>{video.description}</p>
+  </div>
+
+  <div class="video-nav">
+    {prev ? (
+      <a href={`/videos/${prev.slug}`} class="nav-btn">← {prev.title}</a>
+    ) : <span></span>}
+    {next ? (
+      <a href={`/videos/${next.slug}`} class="nav-btn nav-btn-next">{next.title} →</a>
+    ) : <span></span>}
+  </div>
+</Layout>
+
+<style>
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .back-link:hover { color: var(--pink-accent); }
+  .video-title { font-size: 2.25rem; margin: 0.5rem 0 0.25rem; }
+  .video-date { color: var(--ink); opacity: 0.6; margin: 0 0 1.5rem; }
+  .video-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    background: #000;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 4px solid var(--pink-accent);
+    box-shadow: 0 8px 0 var(--pink-bubble), 0 14px 30px rgba(0,0,0,0.15);
+  }
+  .video-wrap iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .watching-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1.5rem 0 1rem;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+  }
+  .description-card {
+    background: var(--cream);
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+    border: 2px solid var(--pink-bubble);
+  }
+  .video-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .nav-btn {
+    background: var(--pink-accent);
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    box-shadow: 0 4px 0 #c13783;
+  }
+  .nav-btn:hover { transform: translateY(-2px); }
+  .nav-btn-next { margin-left: auto; }
+</style>
