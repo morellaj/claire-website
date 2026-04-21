@@ -1,0 +1,17 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const youtubeId = "dQw4w9WgXcQ";
+---
+<Layout title="Sample video">
+  <h1>Sample video</h1>
+  <div class="video-wrap">
+    <iframe
+      src={`https://www.youtube-nocookie.com/embed/${youtubeId}`}
+      title="Sample video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <p>Replace <code>youtubeId</code> in this file with your unlisted video's ID.</p>
+</Layout>
