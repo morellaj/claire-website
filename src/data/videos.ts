@@ -8,27 +8,29 @@ export interface Video {
 }
 
 export const videos: Video[] = [
-  {
-    slug: "dance-party",
-    title: "Dance Party Fun",
-    description: "Having the best time dancing and vibing! Come dance with me! 🎉",
-    videoPath: "/videos/IMG_4207.mov",
-    date: "2026-04-21",
-  },
+
   {
     slug: "art-time",
-    title: "My Art Journey",
-    description: "Today I'm showing you some of my favorite art techniques and creations!",
+    title: "My introdution video",
+    description: " introducing my website",
     videoPath: "/videos/IMG_4211.mov",
     date: "2026-04-21",
   },
   {
+    slug: "dance-party",
+    title: " glam slime day 1",
+    description: "adding lip products to slime",
+    videoPath: "/videos/IMG_4207.mov",
+    date: "2026-04-21",
+  },
+  {
     slug: "slime-making",
-    title: "Making Slime!",
-    description: "Let's make the most satisfying slime ever! Perfect, fluffy, and so fun to play with!",
+    title: "glam slime day 2",
+    description: "adding more products",
     videoPath: "/videos/IMG_4212.mov",
     date: "2026-04-21",
   },
+ 
 ];
 
 export function sortedVideos(): Video[] {
