@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { sortedVideos } from "../data/videos";
 
 const videos = sortedVideos();
-const pusheenImgs = ["/images/pusheen-3.gif", "/images/pusheen-1.gif", "/images/pusheen-2.gif", "/images/pusheen-4.gif"];
+const pusheenImgs = ["/images/pusheen-3.gif", "/images/pusheen-2.gif", "/images/pusheen-4.gif"];
 const capybaraImgs = ["/images/capybara-2.gif", "/images/capybara-4.gif", "/images/capybara-5.gif", "/images/capybara-3.gif"];
 ---
 <Layout title="claire ♡ studio">
@@ -84,7 +84,7 @@ const capybaraImgs = ["/images/capybara-2.gif", "/images/capybara-4.gif", "/imag
   </div>
 
   <!-- Rollerskating pusheen (zips across every 45s) -->
-  <img id="skater" src="/images/pusheen-1.gif" alt="" aria-hidden="true" />
+  <img id="skater" src="/images/pusheen-3.gif" alt="" aria-hidden="true" />
 
   <!-- Slime drip container (populated on code) -->
   <div id="slime-layer" aria-hidden="true"></div>
@@ -538,7 +538,7 @@ const capybaraImgs = ["/images/capybara-2.gif", "/images/capybara-4.gif", "/imag
     }
   }
   function pusheenStampede() {
-    const pusheens = ["/images/pusheen-1.gif", "/images/pusheen-2.gif", "/images/pusheen-3.gif", "/images/pusheen-4.gif"];
+    const pusheens = ["/images/pusheen-2.gif", "/images/pusheen-3.gif", "/images/pusheen-4.gif"];
     for (let i = 0; i < 20; i++) {
       const p = document.createElement("img");
       p.src = pusheens[i % pusheens.length];
