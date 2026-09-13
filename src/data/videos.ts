@@ -9,18 +9,18 @@ export interface Video {
 export const videos: Video[] = [
 
   {
+    slug: "im-a-cat",
+    title: "IM A CAT",
+    description: "you'll die laughing at this hilarious video",
+    youtubeId: "7zKkKwA6Vmg",
+    date: "2026-09-13",
+  },
+  {
     slug: "bingsu-bead-crunch-slime",
     title: "Bingsu bead crunch slime",
     description: "super crunchy slime with bingsu beads",
     youtubeId: "y9ilqnLm4C8",
     date: "2026-09-13",
-  },
-  {
-    slug: "art-time",
-    title: "My introdution video",
-    description: " introducing my website",
-    youtubeId: "sXQhrUxiZS0",
-    date: "2026-04-21",
   },
   {
     slug: "dance-party",
