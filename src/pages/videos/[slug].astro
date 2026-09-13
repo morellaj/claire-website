@@ -75,6 +75,11 @@ const formattedDate = new Date(video.date).toLocaleDateString("en-US", {
   .video-title { font-size: 2.25rem; margin: 0.5rem 0 0.25rem; }
   .video-date { color: var(--ink); opacity: 0.6; margin: 0 0 1.5rem; }
   .video-wrap {
+    /* big: as wide as the screen allows, but short enough to fit without scrolling */
+    width: min(94vw, calc((100vh - 270px) * 16 / 9));
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     background: #000;
     border-radius: 16px;
     overflow: hidden;
@@ -84,6 +89,7 @@ const formattedDate = new Date(video.date).toLocaleDateString("en-US", {
   .video-wrap iframe,
   .video-wrap video {
     width: 100%;
+    aspect-ratio: 16 / 9;
     height: auto;
     display: block;
     border: 0;
