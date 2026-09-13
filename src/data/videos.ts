@@ -9,6 +9,13 @@ export interface Video {
 export const videos: Video[] = [
 
   {
+    slug: "diy-slow-rise-squishy",
+    title: "DIY Slow Rise Squishy (With MAKEUP!) 🎨",
+    description: "no squishy kit needed! i turned a plain chunk of memory foam into a slow rise squishy using just scissors and makeup 💄✂️",
+    youtubeId: "kXeF_wYxvB0",
+    date: "2026-09-13",
+  },
+  {
     slug: "berry-and-peanut",
     title: "Warning: Extreme Cuteness (Berry & Peanut) 🚨🐀",
     description: "they're small, they're squeaky, and they're VERY fancy. meet berry and peanut 🍓🥜",
