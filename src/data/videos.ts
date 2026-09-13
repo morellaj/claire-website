@@ -9,6 +9,13 @@ export interface Video {
 export const videos: Video[] = [
 
   {
+    slug: "berry-and-peanut",
+    title: "Warning: Extreme Cuteness (Berry & Peanut) 🚨🐀",
+    description: "they're small, they're squeaky, and they're VERY fancy. meet berry and peanut 🍓🥜",
+    youtubeId: "yD56amEJDt0",
+    date: "2026-09-13",
+  },
+  {
     slug: "fixing-my-panda-paradise-slime",
     title: "Fixing My Stiff Panda Paradise Slime 🐼",
     description: "my dope slimes panda paradise got super stiff, so i added lotion and a few other things to make it soft again ✨",
