@@ -51,7 +51,7 @@ const capybaraImgs = ["/images/capybara-2.gif", "/images/capybara-4.gif", "/imag
   </section>
 
   <section class="videos">
-    <h2>🎬 my videos</h2>
+    <h2>🎬 my videos 💖</h2>
     <!-- Hidden heart #2: near section heading -->
     <span class="hidden-heart" data-id="h2" style="top: 0.5rem; right: 0.5rem;">♡</span>
     <div class="grid">
@@ -68,7 +68,7 @@ const capybaraImgs = ["/images/capybara-2.gif", "/images/capybara-4.gif", "/imag
           <div class="card-body">
             <h3>{v.title}</h3>
             <p class="desc">{v.description}</p>
-            <p class="date">{new Date(v.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</p>
+            <p class="date">{new Date(v.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" })}</p>
           </div>
           <span class="bow">🎀</span>
         </a>
