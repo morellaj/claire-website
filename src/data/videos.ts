@@ -9,6 +9,13 @@ export interface Video {
 export const videos: Video[] = [
 
   {
+    slug: "fashion-fails",
+    title: "fashion fails 😂",
+    description: "fashion mishaps lol. this hilarious video will make your stomach hurt.",
+    youtubeId: "FruFHdgy0Xo",
+    date: "2026-09-13",
+  },
+  {
     slug: "diy-slow-rise-squishy",
     title: "DIY Slow Rise Squishy (With MAKEUP!) 🎨",
     description: "no squishy kit needed! i turned a plain chunk of memory foam into a slow rise squishy using just scissors and makeup 💄✂️",
