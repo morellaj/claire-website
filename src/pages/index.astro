@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import { sortedVideos } from "../data/videos";
 
 const videos = sortedVideos();
+// Changes on every publish, so browsers fetch fresh thumbnails instead of old saved ones.
+const thumbVersion = Date.now();
 const pusheenImgs = ["/images/pusheen-3.gif", "/images/pusheen-4.gif"];
 const capybaraImgs = ["/images/capybara-2.gif", "/images/capybara-4.gif", "/images/capybara-5.gif", "/images/capybara-3.gif"];
 ---
@@ -59,7 +61,7 @@ const capybaraImgs = ["/images/capybara-2.gif", "/images/capybara-4.gif", "/imag
         <a href={`/videos/${v.slug}`} class="card">
           <div class="thumb">
             <img
-              src={`https://img.youtube.com/vi/${v.youtubeId}/mqdefault.jpg`}
+              src={`https://img.youtube.com/vi/${v.youtubeId}/mqdefault.jpg?t=${thumbVersion}`}
               alt={v.title}
               loading="lazy"
             />
