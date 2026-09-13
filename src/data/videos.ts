@@ -9,6 +9,13 @@ export interface Video {
 export const videos: Video[] = [
 
   {
+    slug: "fixing-my-panda-paradise-slime",
+    title: "Fixing My Stiff Panda Paradise Slime 🐼",
+    description: "my dope slimes panda paradise got super stiff, so i added lotion and a few other things to make it soft again ✨",
+    youtubeId: "jrIS17YEECs",
+    date: "2026-09-13",
+  },
+  {
     slug: "the-frappe-that-trusted-a-parrot",
     title: "The Frappe That Trusted a Parrot 🦜☕",
     description: "a frappe lost at sea begs a parrot for help... big mistake 💀",
