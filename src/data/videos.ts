@@ -9,6 +9,13 @@ export interface Video {
 export const videos: Video[] = [
 
   {
+    slug: "the-frappe-that-trusted-a-parrot",
+    title: "The Frappe That Trusted a Parrot 🦜☕",
+    description: "a frappe lost at sea begs a parrot for help... big mistake 💀",
+    youtubeId: "1N1O9eFUOBI",
+    date: "2026-09-13",
+  },
+  {
     slug: "im-a-cat",
     title: "IM A CAT",
     description: "you'll die laughing at this hilarious video",
