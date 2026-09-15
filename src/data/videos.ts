@@ -9,6 +9,13 @@ export interface Video {
 export const videos: Video[] = [
 
   {
+    slug: "nah-brah",
+    title: "NAH BRAH",
+    description: "I got a suggestion from a friend for Tung Tung Sahur, so here I am!",
+    youtubeId: "u7kqNj-Zvzc",
+    date: "2026-09-14",
+  },
+  {
     slug: "fashion-fails",
     title: "fashion fails 😂",
     description: "fashion mishaps lol. this hilarious video will make your stomach hurt.",
