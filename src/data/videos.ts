@@ -9,6 +9,13 @@ export interface Video {
 export const videos: Video[] = [
 
   {
+    slug: "banana",
+    title: "BANANA",
+    description: "MUAHAHAHA! this video is wild!",
+    youtubeId: "Wi9CzodZ5fM",
+    date: "2026-09-14",
+  },
+  {
     slug: "nah-brah",
     title: "NAH BRAH",
     description: "I got a suggestion from a friend for Tung Tung Sahur, so here I am!",
