@@ -1,0 +1,68 @@
+{
+  "slug": "pink-heart-sunglasses--s",
+  "name": "pink heart sunglasses",
+  "w": 40,
+  "h": 30,
+  "tags": [
+    "fashion",
+    "accessories"
+  ],
+  "added": "2026-11-22T18:49:06",
+  "credit": {
+    "source": "https://commons.wikimedia.org/wiki/File:Pink_heart_shaped_sun_glass.svg",
+    "author": null,
+    "licence": "CC0 1.0"
+  },
+  "made": {
+    "from": "pink-heart-sunglasses.png",
+    "size": 40,
+    "colors": 8,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "variantOf": "pink-heart-sunglasses",
+  "size": "little",
+  "pal": [
+    {"k":"A","hex":"#1a3456"},
+    {"k":"B","hex":"#33335d"},
+    {"k":"C","hex":"#836f97"},
+    {"k":"D","hex":"#573067"},
+    {"k":"E","hex":"#753775"},
+    {"k":"F","hex":"#e299c7"},
+    {"k":"G","hex":"#dc80b8"},
+    {"k":"H","hex":"#e2439a"}
+  ],
+  "grid": [
+    "........................................",
+    "........................................",
+    "........................................",
+    "........................................",
+    "........................................",
+    "........................................",
+    "........................................",
+    "........................................",
+    ".....ABBB..ABBBA........AABBA..BBBA.....",
+    "....DGGFHHBHHHHHE......BEFFHHBHHHHHB....",
+    "...AFGHGHHHHHHHHHBBBBBBBHHFHHHHHHHHHB...",
+    "...DGGGHFHHHHHHHHB....BEHHHGHHHHHHHHD...",
+    "...DHGGGFFHHHHHHHB....BHHHHHGHHHHHHHD...",
+    "...DHHHHFFFHHHHHEB....AEHHHFHGHHHHHHD...",
+    "...BHHHHHHFFHHHHE......EHHHHGHFHHHHHB...",
+    "....HHHHHHHFHHHHD......BHHHGGGFFHHHHA...",
+    "....BHHHHHHHGHHHA......AHHHHHHFFFHHB....",
+    ".....HHHHHHFHGGB........EHHHHHHHFFD.....",
+    ".....DHHHHHHGGG..........EHHHHHHHCA.....",
+    ".......HHHHGCB............EHHHHHD.......",
+    "........BHHDA..............AHHHB........",
+    ".........AB..................BA.........",
+    "........................................",
+    "........................................",
+    "........................................",
+    "........................................",
+    "........................................",
+    "........................................",
+    "........................................",
+    "........................................"
+  ]
+}
