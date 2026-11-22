@@ -1,0 +1,64 @@
+{
+  "slug": "chameleon-on-a-branch--s",
+  "name": "chameleon",
+  "w": 40,
+  "h": 24,
+  "tags": [
+    "animals",
+    "reptiles"
+  ],
+  "added": "2026-11-22T18:09:21",
+  "credit": {
+    "source": "https://commons.wikimedia.org/wiki/File:Chameleon_illustration.svg",
+    "author": "oksmith",
+    "licence": "CC0 1.0"
+  },
+  "made": {
+    "from": "chameleon-on-a-branch.png",
+    "size": 40,
+    "colors": 14,
+    "crop": null,
+    "pop": 1.3,
+    "smooth": 1
+  },
+  "variantOf": "chameleon-on-a-branch",
+  "size": "little",
+  "pal": [
+    {"k":"A","hex":"#be9b60"},
+    {"k":"B","hex":"#a08353"},
+    {"k":"C","hex":"#7f6a44"},
+    {"k":"D","hex":"#7c8457"},
+    {"k":"E","hex":"#adc57e"},
+    {"k":"F","hex":"#749566"},
+    {"k":"G","hex":"#648059"},
+    {"k":"H","hex":"#83ac76"},
+    {"k":"I","hex":"#72ab7b"},
+    {"k":"J","hex":"#52684c"}
+  ],
+  "grid": [
+    ".........JFG............................",
+    "........EEE.............................",
+    ".......GEEE..JFFFFFGJ...................",
+    ".......HEEF.HHHIIHIIIIFJ................",
+    "......FFHHFFHHHIIHHIIHHIIJ..............",
+    ".....FFFHHHHHHHHHHHHHHHIIHHJ............",
+    "....FFFFFHHHHHHHHHHHHHHHHHHHF...........",
+    "....FFFFHHHHHHHHHHHHHHHHHHHHHHJ.........",
+    "....GHHHHHHHHHHHHHHHHHHHHHHHHHH.........",
+    ".....HHHHHHHHHHHHHEEEHHHHHHHHHHF........",
+    "..........FHHHDFHHDDFFFFHHHHHHHIFG......",
+    "........HHHFH....H...FF..HHHHHHIHHG.....",
+    ".......FF......JGHJJFFF........JHHFF....",
+    "......DFF.CCBBBAAFFBBFFCBBBBBBBCDHHFD...",
+    "..CCAAAAFAAAAAAAADGBBBFCAAAAAAAAADHFAAAA",
+    ".AAAAAAABBBBBCCCCCCBBBCCCCCCC..CCCIIAAAA",
+    "AAAAAAC...........................GEDCBB",
+    "AAACC..............................FF...",
+    ".................................G.FF...",
+    "...............................GHHFFF...",
+    "...............................FFFFFF...",
+    "...............................FFFFFG...",
+    "...............................FFFFF....",
+    "................................FFF....."
+  ]
+}

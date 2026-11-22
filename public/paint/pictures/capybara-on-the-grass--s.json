@@ -1,0 +1,68 @@
+{
+  "slug": "capybara-on-the-grass--s",
+  "name": "capybara on the grass",
+  "w": 40,
+  "h": 25,
+  "tags": [
+    "animals",
+    "capybaras"
+  ],
+  "added": "2026-11-22T18:10:08",
+  "credit": {
+    "source": "https://commons.wikimedia.org/wiki/File:Hydrochoeris_hydrochaeris_in_Brazil_in_Petr%C3%B3polis,_Rio_de_Janeiro,_Brazil_09.jpg",
+    "author": "Wilfredor",
+    "licence": "CC0 1.0"
+  },
+  "made": {
+    "from": "capybara-on-the-grass.jpeg",
+    "size": 40,
+    "colors": 13,
+    "crop": "0.1,0.12,0.85,0.8",
+    "pop": 1.2,
+    "smooth": 1
+  },
+  "variantOf": "capybara-on-the-grass",
+  "size": "little",
+  "pal": [
+    {"k":"A","hex":"#eecbb0"},
+    {"k":"B","hex":"#e0ac88"},
+    {"k":"C","hex":"#d09260"},
+    {"k":"D","hex":"#b68969"},
+    {"k":"E","hex":"#b37438"},
+    {"k":"F","hex":"#89604a"},
+    {"k":"G","hex":"#563d2f"},
+    {"k":"H","hex":"#a8b25d"},
+    {"k":"I","hex":"#54612c"},
+    {"k":"J","hex":"#72834c"},
+    {"k":"K","hex":"#7b9a32"},
+    {"k":"L","hex":"#6e8c3a"},
+    {"k":"M","hex":"#5a7630"}
+  ],
+  "grid": [
+    "LKKKLLLLLKKKKKKKKKKKKKKKKKKKKKKKLLLLLLLL",
+    "LLKKLLLLLKKKKKKKKKKKKKKKKKHHAAAKLLLLLLLL",
+    "LLKKKLKKLKKDFFDKKKKKKHHHHAAAAAAAALLLLLLL",
+    "LLLKKKKKHBDDFFBBBHHHHHHAAAAAAAAAAAHJLKLL",
+    "LJLKKKLDDFFFFFFDDBBAAAAAAAAAABBBBBBJJKKL",
+    "LJJKKFFFFFFFFFFDDDDDDAAAAAAABBBBBBBHLKKK",
+    "LJJJGGFFFFFFFFDDDDDDDBBBBBBBBBBBBBBHLLKK",
+    "KKKGGGFFFFFFFDDDDDDDDDDBBBBCBBBBBBBCLLLL",
+    "KKKGGGFFFFFFDDDDDDDDDDDDBBCCCCCCCCCCLLLL",
+    "KKKGGGFFFFFFDDDDDDDDDDDDDBCCCCCCCCCCMMMI",
+    "KKKGGGGFFFFFDDDDDDDDDDDDDCCCCCCCCCCCMMMI",
+    "LLLJGGGGFFFFFDDDDDDDDDCCCCCCCCCCCCCCEMMM",
+    "LLLLLIIIIGFFFFDDDDDDDEEEEEEEEECCCEEEEMMM",
+    "MMLMLLMMMGGFFFFDDDDDCEEEEEEEEEEEEEEEIIMM",
+    "MMIMLMMMLEFFFFFFDDDDCCEEEEEEEEEEEEEIIIMM",
+    "MIIIMMMLLMMFFFFFFFDDDCEEEEEEEEEEEEIIIMMM",
+    "JIIMMMMMMMMFFGFFFFDDDCEEEEEEEEEIIMMIMMMM",
+    "MMMMMMMIMMIFFGGGFFFDDDEEEIIIMMMILLLLMMMI",
+    "MMMMLJIIIMIFGGGGFFFFDDEEIIIMMMMMLLLJMMMI",
+    "MMMMLJJJJMFFFGGDDDFFFFFLLLLLMJJJKKJJMMMM",
+    "MMMMMKLLFFFFFFDDDDIIMMMLLLLLLJJJKKJJMMML",
+    "MMMMLLKLIIIFFFJJMMMLLLLLLLLLLJJJIIMMMMML",
+    "LMLLLLJJLLJJJLLLJLLLLLLLLLMLMMJJIIMMMMIL",
+    "LMLLLKKLLLLLLLLLLLLLLLLLJMMJJJJJJJJMMIIM",
+    "MMLLLMMMKKKLLLLLLLLLLLLIJJJJJJJJJJJJMFFF"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "slug": "red-panda-face--s",
+  "name": "red panda",
+  "w": 40,
+  "h": 33,
+  "tags": [
+    "animals",
+    "wild"
+  ],
+  "added": "2026-11-22T18:08:28",
+  "credit": {
+    "source": "https://commons.wikimedia.org/wiki/File:Red_panda.svg",
+    "author": "revzack",
+    "licence": "CC0 1.0"
+  },
+  "made": {
+    "from": "red-panda-face.png",
+    "size": 40,
+    "colors": 11,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "variantOf": "red-panda-face",
+  "size": "little",
+  "pal": [
+    {"k":"A","hex":"#f0eeee"},
+    {"k":"B","hex":"#d2cdcb"},
+    {"k":"C","hex":"#b6b2b2"},
+    {"k":"D","hex":"#8f817a"},
+    {"k":"E","hex":"#c7ae9d"},
+    {"k":"F","hex":"#cba588"},
+    {"k":"G","hex":"#bd8a63"},
+    {"k":"H","hex":"#c27e49"},
+    {"k":"I","hex":"#96684b"},
+    {"k":"J","hex":"#673f2c"}
+  ],
+  "grid": [
+    "..DCC..............DD..............CCD..",
+    ".DDAABBBBC....IFFFFFFFFFFI....CBBBBAADD.",
+    "DAAAAAAAAAAAGFFFFGGGGGGFFFFGAAAAAAAAAAAD",
+    "DAAABBABBAAAGGGHHHHHHHHHHGGGAAABBABBAAAD",
+    ".AAABDCCBAAAHHHHHHHHHHHHHHHHAAABCCDBAAA.",
+    ".AAAADDDBAAAHHHHHHHHHHHHHHHHAAABDDDAAAA.",
+    "..AAADDDAAAHHHHHHHHHHHHHHHHHHAAADDDAAA..",
+    "..AAAACCGHHHHHHHHHHHHHHHHHHHHHHGCCAAAA..",
+    "..CAAAAEHHHHHHHHHHHHHHHHHHHHHHHHEAAAAC..",
+    "...AAAAIHHHHHHHHHHHHHHHHHHHHHHHHIAAAA...",
+    "...BAAIIHHHHHHHHHHHHHHHHHHHHHHHHIIAAB...",
+    "...AAAIIHHHHHHHHHHHHHHHHHHHHHHHHIIAAA...",
+    "...AAADHHGGHHHHHHHHHHHHHHHHHHGGHHDAAA...",
+    "..CAABGHGEEHHHGFFHHHHHHFFGHHHEEGHGBAAC..",
+    "..CAABGHGEEHHHGFEFHHHHFEFGHHHEEGHGBAAC..",
+    "..CCCFHHEEEHHHEEEFHHHHFEEEHHHEEEHHFCCC..",
+    ".....FHGEEEEIDDDDFHHHHFDDDDIEEEEGHF.....",
+    "....DFHGEEEEJIIJJFEGGEFJJIIJEEEEGHFD....",
+    ".....FHGEEEEJIIIIAAAAAAIIIIJEEEEGHF.....",
+    ".....FFGEEEIJJJIAAAAAAAAIJJJIEEEGFF.....",
+    "......IGEEEIJJJAAAAAAAAAAJJJIEEEGI......",
+    ".......GIGGIJJAAAAAAAAAAAAJJIGGIG.......",
+    "........IHHHJIAAAAADDDAAAAIJHHII........",
+    "..........IGGIAAAAJDDDAAAAIGGI..........",
+    "............DIIAAAJJJJAAAIID............",
+    "..............IIABDJJDBAII..............",
+    "...............GBBDJJDBBG...............",
+    ".................BCDDCB.................",
+    "..................CBBC..................",
+    "........................................",
+    "........................................",
+    "........................................",
+    "........................................"
+  ]
+}

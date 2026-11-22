@@ -4,6 +4,7 @@ import { Board, prepare, drawThumb, luminance } from './board.js';
 import * as store from './store.js';
 import { confetti, sparkleAt } from './fun.js';
 import { initMaker, showMaker } from './maker.js';
+import * as sound from './sound.js';
 
 const $ = sel => document.querySelector(sel);
 const el = (tag, attrs = {}, ...kids) => {
@@ -58,17 +59,34 @@ async function drawCardThumb(canvas) {
   } catch { /* leave it blank */ }
 }
 
+// A picture can come in little / medium / big. The one she touched last is the
+// one the card shows (its progress and its thumbnail).
+function active(s) {
+  const slugs = s.sizes ? s.sizes.map(v => v.slug) : [s.slug];
+  let best = { slug: s.sizes ? s.sizes[s.sizes.length - 1].slug : s.slug, prog: null };
+  for (const slug of slugs) {
+    const p = store.summary(slug);
+    if (p && p.done > 0 && (!best.prog || String(p.touched) > String(best.prog.touched))) best = { slug, prog: p };
+  }
+  return best;
+}
+const sizeOf = (w, h) => (w * h > 4000 ? 'big' : w * h > 1200 ? 'medium' : 'little');
+const pctOf = p => (p && p.total ? Math.floor(100 * p.done / p.total) : 0);
+
 function card(s) {
-  const prog = store.summary(s.slug);
-  const pct = prog && prog.total ? Math.floor(100 * prog.done / prog.total) : 0;
-  const thumb = el('canvas', { class: 'thumb', 'data-slug': s.slug, width: 10, height: 10 });
+  const { slug, prog } = active(s);
+  const pct = pctOf(prog);
+  const thumb = el('canvas', { class: 'thumb', 'data-slug': slug, width: 10, height: 10 });
   const badge = prog && prog.finished ? el('span', { class: 'badge done' }, '✓ done')
     : pct > 0 ? el('span', { class: 'badge' }, pct + '%') : null;
-  const size = s.w * s.h > 4000 ? 'big' : s.w * s.h > 1200 ? 'medium' : 'little';
-  const c = el('a', { class: 'card', href: '#/p/' + s.slug },
+  const meta = s.sizes ? 'little · medium · big' : `${sizeOf(s.w, s.h)} · ${s.colors} colours`;
+  const c = el('a', {
+    class: 'card', href: '#/p/' + s.slug,
+    onclick: e => { if (s.sizes) { e.preventDefault(); showSizes(s); } },
+  },
     el('div', { class: 'thumb-wrap' }, thumb, badge),
     el('div', { class: 'card-name' }, s.name),
-    el('div', { class: 'card-meta' }, `${size} · ${s.colors} colours`));
+    el('div', { class: 'card-meta' }, meta));
   if (s.slug.startsWith('mine-')) {
     c.querySelector('.thumb-wrap').append(el('button', {
       class: 'del', 'aria-label': 'delete this picture',
@@ -96,7 +114,7 @@ async function showGallery() {
   }
   const going = [], fresh = [], done = [];
   for (const s of [...store.mineList(), ...idx.pictures]) {
-    const p = store.summary(s.slug);
+    const p = active(s).prog;
     if (p && p.finished) done.push([s, p]); else if (p && p.done > 0) going.push([s, p]); else fresh.push([s, p]);
   }
   going.sort((a, b) => String(b[1].touched).localeCompare(String(a[1].touched)));
@@ -129,7 +147,7 @@ async function showGallery() {
 // Gallery shelves, in order. A picture's first tag picks its shelf.
 const SHELVES = [
   ['mine', 'my pictures 📷'],
-  ['pets', 'cats & dogs 🐾'],
+  ['pets', 'pets 🐾'],
   ['animals', 'animals 🦋'],
   ['fashion', 'fashion 👗'],
   ['makeup', 'makeup 💄'],
@@ -137,6 +155,22 @@ const SHELVES = [
   ['nature', 'nature 🌸'],
   ['more', 'more ✨'],
 ];
+
+// "which size?" when she taps a picture that comes in sizes
+function showSizes(s) {
+  const sheet = $('#sizes');
+  $('#sizes-name').textContent = s.name;
+  $('#sizes-list').replaceChildren(...s.sizes.map(v => {
+    const p = store.summary(v.slug), pct = pctOf(p);
+    const note = p && p.finished ? '✓ done' : pct > 0 ? pct + '% done' : '';
+    return el('a', { class: 'size-btn', href: '#/p/' + v.slug, onclick: () => { sheet.hidden = true; } },
+      el('span', { class: 'size-dot ' + v.size }),
+      el('b', {}, v.size),
+      el('span', { class: 'size-info' }, `${v.w} × ${v.h} · ${v.colors} colours`),
+      note ? el('span', { class: 'size-note' }, note) : null);
+  }));
+  sheet.hidden = false;
+}
 
 function homeScreenTip() {
   const tip = $('#tip');
@@ -163,7 +197,16 @@ async function showPicture(slug) {
   board = new Board($('#board'), P, filled, {
     onChange: () => updateStatus(),
     onStroke: (cells, how) => afterStroke(cells, how),
-    onMiss: t => nudgeChip(t),
+    onMiss: t => { nudgeChip(t); sound.boop(); },
+    onTouch: () => sound.unlock(),
+    onPop: () => sound.pop(),
+    onBucket: (n, x, y) => {
+      sound.swoosh(n);
+      if (n >= 12) {
+        const r = $('#board').getBoundingClientRect(), t = board.selected;
+        sparkleAt(r.left + x, r.top + y, `rgb(${current.P.rgb[t].join(',')})`);
+      }
+    },
   });
   buildPalette();
   board.fitted = false; board.resize(); // fit again now the palette has its size
@@ -251,6 +294,7 @@ function afterStroke(cells, how) {
     if (board.remaining[t] === 0) {
       // a colour is done: pop its chip and move on to the next one left
       const chip = document.querySelector(`.chip[data-i="${t}"]`);
+      sound.chime();
       if (chip) { const r = chip.getBoundingClientRect(); sparkleAt(r.left + r.width / 2, r.top + r.height / 2, `rgb(${P.rgb[t].join(',')})`); }
       const order = [...P.rgb.keys()];
       const next = order.slice(t + 1).concat(order.slice(0, t)).find(i => board.remaining[i] > 0);
@@ -271,7 +315,7 @@ function showFinished(party) {
   const c = $('#finish-thumb'); c.width = 260 * (window.devicePixelRatio || 1);
   drawThumb(c, P, board.filled);
   card.hidden = false;
-  if (party) confetti(P.rgb.map(c => `rgb(${c.join(',')})`));
+  if (party) { confetti(P.rgb.map(c => `rgb(${c.join(',')})`)); sound.fanfare(); }
 }
 
 // Save to Photos. iPad Safari opens the share sheet ("Save Image"); elsewhere
@@ -322,8 +366,14 @@ function wire() {
   $('#fit').onclick = () => board?.fit();
   $('#find').onclick = () => board?.findNext();
   $('#save').onclick = savePNG;
+  const muteBtn = $('#mute');
+  const showMute = () => { muteBtn.textContent = sound.isMuted() ? '🔇' : '🔊'; };
+  muteBtn.onclick = () => { sound.setMuted(!sound.isMuted()); sound.unlock(); showMute(); if (!sound.isMuted()) sound.pop(); };
+  showMute();
   $('#finish-save').onclick = savePNG;
   $('#finish-close').onclick = () => { $('#finish').hidden = true; };
+  $('#sizes-close').onclick = () => { $('#sizes').hidden = true; };
+  $('#sizes').addEventListener('click', e => { if (e.target.id === 'sizes') $('#sizes').hidden = true; });
   $('#tip-close').onclick = () => { store.pref('tipClosed', true); $('#tip').hidden = true; };
   document.addEventListener('keydown', e => {
     if (!board) return;

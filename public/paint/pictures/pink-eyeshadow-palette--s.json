@@ -1,0 +1,70 @@
+{
+  "slug": "pink-eyeshadow-palette--s",
+  "name": "pink eyeshadow palette",
+  "w": 40,
+  "h": 27,
+  "tags": [
+    "makeup",
+    "eyeshadow"
+  ],
+  "added": "2026-11-22T18:21:22",
+  "credit": {
+    "source": "https://commons.wikimedia.org/wiki/File:Makeup_brushes_and_eyeshadows_(Unsplash).jpg",
+    "author": "freestocks.org",
+    "licence": "CC0 1.0"
+  },
+  "made": {
+    "from": "pink-eyeshadow-palette.jpeg",
+    "size": 40,
+    "colors": 13,
+    "crop": "0.1,0.42,0.52,0.52",
+    "pop": 1.2,
+    "smooth": 1
+  },
+  "variantOf": "pink-eyeshadow-palette",
+  "size": "little",
+  "pal": [
+    {"k":"A","hex":"#bfc3cb"},
+    {"k":"B","hex":"#dabab1"},
+    {"k":"C","hex":"#af7c79"},
+    {"k":"D","hex":"#9c9ab9"},
+    {"k":"E","hex":"#48496d"},
+    {"k":"F","hex":"#dfdde7"},
+    {"k":"G","hex":"#c3bbd5"},
+    {"k":"H","hex":"#81789b"},
+    {"k":"I","hex":"#4f3757"},
+    {"k":"J","hex":"#161126"},
+    {"k":"K","hex":"#c491bb"},
+    {"k":"L","hex":"#8f6389"},
+    {"k":"M","hex":"#de99ba"}
+  ],
+  "grid": [
+    "AAAAAAAAAFFAAACCIIFFAAAAAAAAAAFFEDHHEIII",
+    "AAAAAAAAAFFFAACCCCFFAAAAAAAAAAFEEDDDLLLI",
+    "AAFFFAAAAABBAAGEEFFFAAAAAAAAAHDHHLLLHHHH",
+    "AAFFFAAAAAFBBFFFFFFFAAAAAAAAHHLLLKKKHHHH",
+    "AAFFFFAAAAFFFFFFFFFFFAAAAAEELLLLKKKKLLDD",
+    "AACFFFFAAAFFFFFFFFFFFFAAEEEHKKKKLKKKKKDD",
+    "FACBBBFFAFFFFFFFFFFFFFEEEHHKKKKKKLKKKDDD",
+    "FFBBBBBFAFFFFFFFFFFFFIEELLLLKKKKKLDHHHDD",
+    "AFBBBBBBAAFFFFFFFFFIEDHMMMMMLKKKKHHHHDDD",
+    "ABBBBBBAAAFFFFFFFIIILLHMMMMMHLGGHGDDDDDD",
+    "AABBBBAAAAFFFFFEIIIIMMMLIMMMMDDDGGGGGHHD",
+    "AAABBBAAAAFFFEEEEIMMMMMILIMMMDHHGGGGGGFD",
+    "AABBBBAAAAFEEEDDGHHMMMMMILKDDDGGGGGGGGGG",
+    "AABCCBAAAEEEEGFFFFHHMMMMMHKDGGGGGDDGGGGG",
+    "ABBCCCDEEEEEEDFFFFFKKMMMDKHDGGGGGGGGGGHH",
+    "ACCCCEEEEEGGGDFFFFFFGGGGDFFGGGGGGGGGGHHH",
+    "ACCEEEHHHGGGGDGGFFFFDDDGFFFFGGGGGGGGDHHH",
+    "IEEEDDDDGGGGGGGGFFFFGDDGFFFFFGGGGGGEEJJJ",
+    "IIDDHFFDGGGGGGGDFFHHGGGGGFFFFFGGGEEEJIJD",
+    "DDDFFFFFAGGGGGGDDDGGGGGGGFFFFFGGEEEJJEEE",
+    "DDDFFFFFFAGGGGDDGGGGGGGGGGDFFEEEEJIJEEEE",
+    "DDDFFFFFFFDDDDFFFGGGGGGGGGDGGEEEJJEEIJAA",
+    "DDDFFFFFFFDDDFFFFFGGGGGGGGDEEEJJJEEEIAAA",
+    "DDDHFFFFFDDDDFFFFFFGGGGGGGEEEJJJHIEAAAAA",
+    "FFADFFFFFFFFFFFFFFFFGGGGEEEJJJJEHIAAAAAA",
+    "FFFAHHDFFFFFFGFFFFFFFGIEEEJJJHEEEAAAFFFF",
+    "FFFAHHHFFFFFFDGFFFFFDEEIEJJJDHHHAAAFFFFF"
+  ]
+}

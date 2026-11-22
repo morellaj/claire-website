@@ -1,0 +1,64 @@
+{
+  "slug": "red-sunglasses--s",
+  "name": "red sunglasses",
+  "w": 40,
+  "h": 23,
+  "tags": [
+    "fashion",
+    "sunglasses"
+  ],
+  "added": "2026-11-22T18:18:02",
+  "credit": {
+    "source": "https://openclipart.org/detail/171225",
+    "author": "diamonjohn",
+    "licence": "Public domain"
+  },
+  "made": {
+    "from": "red-sunglasses.png",
+    "size": 40,
+    "colors": 12,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "variantOf": "red-sunglasses",
+  "size": "little",
+  "pal": [
+    {"k":"A","hex":"#474647"},
+    {"k":"B","hex":"#313131"},
+    {"k":"C","hex":"#ea718a"},
+    {"k":"D","hex":"#ea4064"},
+    {"k":"E","hex":"#a18087"},
+    {"k":"F","hex":"#ec0a39"},
+    {"k":"G","hex":"#be092d"},
+    {"k":"H","hex":"#91142e"},
+    {"k":"I","hex":"#722132"},
+    {"k":"J","hex":"#2b1217"},
+    {"k":"K","hex":"#171011"}
+  ],
+  "grid": [
+    ".........HHHHDD.........................",
+    ".......HIAAAAAEDD.......................",
+    "......HBBAAAAAEDF.......DDDDDDDF........",
+    ".....KKKKBBBBBBIF.....FHIJJJJJICDGF.....",
+    "....GKKKKKKKKKKHFD.FFFKKKBBBAAAAEEFFF...",
+    "....KKKKKKKKKKKFFDDFFKKKKBBBAAAAAAEEFFF.",
+    "...HKKKKKKKKKKKFFGGGFKKKKBBBBAAAAAABBFF.",
+    "...IKJJKKKKKKKHFF.IGGKKKKKBBBBAAAAABBBFF",
+    "..DAKJJJJJJKKKFF...GHKKKKKKBBBBAAAABBBFF",
+    "..CAKJJJJJJJKKGF...GHKKKKKKKBBBBAAABBBHF",
+    "..CAKKKKJJJIKGGFFFFGHKKKKKKKKBBBBAABBBHF",
+    "..CAKKKKKKKKIGGFFFFFHAJJJJJJJJJJBBBBBBHF",
+    "..DAKKJJJJHHGGG....GGEJJJJJJJJJJJJJJJBHF",
+    "..FFKKKJJGGHHI......GEEJJJJJJJJJJJJJJJHF",
+    "...FFIIGIGGHAAAAAAAAGEEKBJJJKKJJJJJJJJFF",
+    "...FFFFGIIAAAAAAAAAAAGEBKBJJJKKKKKKKKIF.",
+    ".....IBAAAAAAAAAAAAAAGGEBKJJJJKKKKKKKFF.",
+    "........AAAAAAAAAAAAAAGFFEAJJJJKKKKKKF..",
+    "............AAAAAAAAAAAFFFFIJJJJKKIFFF..",
+    "................AAAAAAAAAFFFFGGGGFFFF...",
+    ".......................AAAAIHGFFFGG.....",
+    "........................................",
+    "........................................"
+  ]
+}

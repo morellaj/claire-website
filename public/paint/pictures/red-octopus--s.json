@@ -1,0 +1,70 @@
+{
+  "slug": "red-octopus--s",
+  "name": "red octopus",
+  "w": 40,
+  "h": 30,
+  "tags": [
+    "animals",
+    "sea"
+  ],
+  "added": "2026-11-22T18:08:19",
+  "credit": {
+    "source": "https://commons.wikimedia.org/wiki/File:Red_octopus.svg",
+    "author": "Jason J. Patterson (jpneok)",
+    "licence": "CC0 1.0"
+  },
+  "made": {
+    "from": "red-octopus.png",
+    "size": 40,
+    "colors": 10,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "variantOf": "red-octopus",
+  "size": "little",
+  "pal": [
+    {"k":"A","hex":"#c33636"},
+    {"k":"B","hex":"#b93434"},
+    {"k":"C","hex":"#9b3a3a"},
+    {"k":"D","hex":"#a12c2c"},
+    {"k":"E","hex":"#7d3f3f"},
+    {"k":"F","hex":"#673d3d"},
+    {"k":"G","hex":"#7c2323"},
+    {"k":"H","hex":"#6b1e1e"},
+    {"k":"I","hex":"#511717"},
+    {"k":"J","hex":"#311010"}
+  ],
+  "grid": [
+    "........................IHGG............",
+    "......................DGAABBB...........",
+    ".....................BBGAABBB...........",
+    "....................ADBAAABBAG..........",
+    "...................HDDDAAABBAH..........",
+    "...................GDDDDAABBB...........",
+    "..................GGAADGDBBAD...........",
+    "..................GGAAEGDBAAG...........",
+    "..................GDAABBBBAA............",
+    "................DHHDDBBHHGG.............",
+    "..............ADDAAAADDHHH..............",
+    ".............BBBDBBBAAAAHHHH............",
+    "...........GGEEBBADDAAAAAAHHHJ..........",
+    "..........DGFEEAADDDBAAAAAAHGGGJ........",
+    "........DBBFFFAADDDDBAABEEABGGGGG.......",
+    "..FFFJECCEFFHDAAHGI.GAABEFFBGGIGHH......",
+    "......FFF..HHAAHGH...AAAGHFFG....II.....",
+    "..........HHABAHGH...GAAGHHFBG....J.....",
+    "..........HHAAJHGH...GAAGGGFDD.....J....",
+    "..........HAA..HGH...GAA..IIFD.....J....",
+    ".........IGHA..IGGI..AAG...IFFD.......J.",
+    "........JDBH....GGI..AA.....FFDJ...II...",
+    "JFFFFEGGCC......IGG.DAH......JEGHIII....",
+    "......FFF........GIGBD.........FEI..HH..",
+    ".....IIJ..........GGB............FFFF...",
+    "..JJII.............DH...................",
+    "...................BJJ..................",
+    "...................C...J................",
+    "...................GF...................",
+    "....................IJ.................."
+  ]
+}

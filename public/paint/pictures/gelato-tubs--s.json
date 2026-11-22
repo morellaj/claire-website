@@ -1,0 +1,69 @@
+{
+  "slug": "gelato-tubs--s",
+  "name": "gelato rainbow",
+  "w": 40,
+  "h": 25,
+  "tags": [
+    "food",
+    "ice-cream"
+  ],
+  "added": "2026-11-22T18:29:45",
+  "credit": {
+    "source": "https://commons.wikimedia.org/wiki/File:Gelato_ice_cream.jpg",
+    "author": "rawpixel",
+    "licence": "CC0 1.0"
+  },
+  "made": {
+    "from": "gelato-tubs.img",
+    "size": 40,
+    "colors": 14,
+    "crop": null,
+    "pop": 1.2,
+    "smooth": 1
+  },
+  "variantOf": "gelato-tubs",
+  "size": "little",
+  "pal": [
+    {"k":"A","hex":"#7d7b6c"},
+    {"k":"B","hex":"#5d5450"},
+    {"k":"C","hex":"#be786c"},
+    {"k":"D","hex":"#d05d59"},
+    {"k":"E","hex":"#952927"},
+    {"k":"F","hex":"#642e28"},
+    {"k":"G","hex":"#1e1818"},
+    {"k":"H","hex":"#d9c7b6"},
+    {"k":"I","hex":"#ae9d87"},
+    {"k":"J","hex":"#886a45"},
+    {"k":"K","hex":"#b3b671"},
+    {"k":"L","hex":"#e1c446"},
+    {"k":"M","hex":"#a88a24"},
+    {"k":"N","hex":"#181852"}
+  ],
+  "grid": [
+    "GGGGGGGGGGAAAKKLLLLLLLBFDDDDDJCCDJJIIKKH",
+    "GGGGGBBAAGAAALLLLLLLLLLFDDDDDGGCCCCCCCAA",
+    "GGGBBDDDDJJAALLLLLLLLLLKJDEEEGNCCCCCCCBB",
+    "BBBADDDDDDJJMLLLMMLLLLLKJJJJCFNBCCCCCCCE",
+    "BAAADDDDDDDJMLLMMMMLLLBNMLMMMJBBCCCCCDDD",
+    "AAAADDDDDDDDELLMMMMMLLJNMLLLKKABAICDDDDE",
+    "BBFEDDDDDDDDDEJMMMMMLLJNKLLKKKAAAIEDDDDE",
+    "GGFEEDDDDDDDDEEFFMMMLLMNKLMKKKANNFEDDDDD",
+    "GGGEEDDEEDDDDDDDEEFJJMMNKLMKKIANNFEDDDDD",
+    "FFGEEEEEEEDDDDDDDEFFFJAAAIIIIFFFNFDDDDDD",
+    "FFFEEEEEEDDDDDDDDDFFEEAAAAIIAFFFEEDDDDEE",
+    "GFFEEEEEEDDDDFFFDDFFFJANAAAIIIFFEEEEEEEE",
+    "GFFFEEEEEEDDFFDDDDDEIIBNAJJIIIIFEEEEEEEE",
+    "NFFFFFEEEEEEEDDDECCIIIBNAJJICHHIICJEEEEE",
+    "NFFFFFFFEEEEEEEEAAAIIIINJJCCCHHHHCCAAJFF",
+    "NNDFFFFFFFFEEEEAAIIIIIIAIICCHHHHHHCCHHHA",
+    "NNDFFFFFFFAAAAAIIIIIJJJAHHIHHHHHHHHHHHHC",
+    "NNNCFFFFFFAAAAAAAIJJJJJJHHHHHHHHHHHHHHHC",
+    "NNNCDDFGGIIAAAAAAAJJJJJIHHHHHHHHCHHHJHHH",
+    "NNNNDEEIIIIIAAAAAAIIIJJIHHHHHHHHIIIDDHHH",
+    "DNNNBBIIIIKKAKKKKKKKIJIIIHHHHHCCIIIIIIHH",
+    "DFNNNBIIKKKKKKKKKKKKMMJIIHHHHHCCIHHHCCII",
+    "EFNNNAIKKKKKKKKKKKKFFJJJJIHKKHIIIICHHHII",
+    "IHNNNBKKKKKKKKKKKKKFFKKKKIAAIHIIICCJJJII",
+    "IABNNBKKKKKKKKKKKKJJKKKKKKKAAAIKKIAJJJII"
+  ]
+}

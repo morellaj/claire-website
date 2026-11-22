@@ -1,0 +1,67 @@
+{
+  "slug": "row-of-lipsticks--s",
+  "name": "row of lipsticks",
+  "w": 40,
+  "h": 23,
+  "tags": [
+    "makeup",
+    "lipstick"
+  ],
+  "added": "2026-11-22T18:26:44",
+  "credit": {
+    "source": "https://commons.wikimedia.org/wiki/File:DifferentColorsOfLipsticks.JPG",
+    "author": "Raysonho @ Open Grid Scheduler / Grid Engine",
+    "licence": "CC0 1.0"
+  },
+  "made": {
+    "from": "row-of-lipsticks.jpeg",
+    "size": 40,
+    "colors": 14,
+    "crop": "0,0.3,0.8,0.7",
+    "pop": 1.4,
+    "smooth": 1
+  },
+  "variantOf": "row-of-lipsticks",
+  "size": "little",
+  "pal": [
+    {"k":"A","hex":"#837275"},
+    {"k":"B","hex":"#47404a"},
+    {"k":"C","hex":"#805055"},
+    {"k":"D","hex":"#2f1018"},
+    {"k":"E","hex":"#271816"},
+    {"k":"F","hex":"#89aab1"},
+    {"k":"G","hex":"#586a7c"},
+    {"k":"H","hex":"#354d5c"},
+    {"k":"I","hex":"#1f2b35"},
+    {"k":"J","hex":"#0c1017"},
+    {"k":"K","hex":"#a18fc1"},
+    {"k":"L","hex":"#98478b"},
+    {"k":"M","hex":"#583961"},
+    {"k":"N","hex":"#4e1a38"}
+  ],
+  "grid": [
+    "EEBBBCADDEHBDBBBBBHBBAFBHGGBBBHHCNNCHHED",
+    "EEBBBCKKBBGGGBBABBHGGCCBHHGACGGHDDDBHHBJ",
+    "EEBBBNKKBBGGGBAABBHMNNGGGHAKKGGGDDDBGKKK",
+    "EEBHHNNNNBGKKMDDGGBNNNGGGGCCNGGGGHHGGKKK",
+    "JJBHHDDDGBGLLLGGGGBNNNGGGGGBBKKKKHHHGNNN",
+    "JNLLHGGGGHNNNLHHHGGNNNKKGGGGGGKKKHHHGCCB",
+    "JNNNNHHHHHNNNNHHHHGGGGKKKMHGGGMMMGHHGCCC",
+    "JDDNNHHHHHHGNCCCHHHHHHNNNMHHGGGGGGHHBCCC",
+    "HDDDNGHHHHHHBEEEBHHHHAAANMHHHBAABHHHBDDD",
+    "GBBBBGHHHHIIBEEEBHHHAAAAGGHHHEEEEHHHGDDD",
+    "IHHHHIHHHHIIBEEEGHHHAAAABHHHGEEEEHHHGGBB",
+    "IHHIIIHHHHHHBBHGGHHHECCCHHHGGEEEEGHHHIII",
+    "IHHIIIIHGGGIGGIIIHGGEEEEHHIIHGEEEGGHHIII",
+    "IHHIIIIIIIIFFFIIIHGGEEEEGGJJHIIIIJJHHIII",
+    "IHHIIIIIIFFFFFIIHIIGBBBGGGJJHIIIJJJHHIII",
+    "IHHIIHHJJFFFBGFFHIJHHHBBIIHIIIJJJIIHHIII",
+    "HHHIIIJJGGGBBFFFHHJIIJJJJGHHHIIIIIHHHIII",
+    "HHHIIIJJGGGGFFFHHHIIIIIIIGHHHIIIIIHHHIII",
+    "IIIJJJJJIHHHHIIHHHIIIIIIIJHHHIIIIIJHHBII",
+    "JJJJJJJJIHHIIIIIHGHIIIIIIJHHHIIJIIJJJJJJ",
+    "JJJJJJJJIHHIIIIIJJHHIIIIIJJHHIIJJJJJJJJJ",
+    "JJJJJJJJIHHIIIIJJJHIIIIIIIJJJJJJJJJJJJJJ",
+    "JJJJJJJJIHHIIIIJJJGIIIJIHHJJJJJJJJJJJJJJ"
+  ]
+}

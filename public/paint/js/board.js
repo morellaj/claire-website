@@ -1,8 +1,9 @@
 // The colouring board: draws a picture on a canvas and turns touches, Apple
 // Pencil, mouse and trackpad into fills, pans and zooms.
 //
-// One finger / Pencil / mouse: fill (drag to sweep; only cells of the selected
-// colour take it, so a sweep never colours the wrong thing). Two fingers: pinch
+// One finger / Pencil / mouse: a tap fills the whole patch of touching cells
+// with that number, in a quick ripple; a drag sweeps cell by cell. Only cells
+// of the selected colour take it, so nothing ever gets the wrong colour. Two fingers: pinch
 // to zoom and pan. Wheel / trackpad: zoom; right- or middle-drag: pan.
 
 const EMPTY = '.';
@@ -96,6 +97,7 @@ export class Board {
 
   destroy() {
     this.dead = true;
+    if (this.anim) cancelAnimationFrame(this.anim);
     this.life.abort();
     this.ro.disconnect();
     if (this.raf) cancelAnimationFrame(this.raf);
@@ -260,7 +262,7 @@ export class Board {
     const s = this.scale, steps = Math.max(1, Math.ceil(Math.hypot(bx - ax, by - ay) / (s * 0.5)));
     let changed = false;
     for (let k = 0; k <= steps; k++) changed = this.fillCell(this.cellAt(ax + (bx - ax) * k / steps, ay + (by - ay) * k / steps)) || changed;
-    if (changed) { this.bctx.putImageData(this.bimg, 0, 0); this.requestDraw(); this.hooks.onChange?.(); }
+    if (changed) { this.bctx.putImageData(this.bimg, 0, 0); this.requestDraw(); this.hooks.onChange?.(); this.hooks.onPop?.(); }
   }
   setCells(cells, value) {
     for (const i of cells) {
@@ -272,6 +274,48 @@ export class Board {
     }
     this.bctx.putImageData(this.bimg, 0, 0); this.requestDraw();
   }
+  // ---------- tap-to-fill a patch
+  // Every unfilled cell of the selected colour touching cell i (sides only),
+  // in rings outward from it, so it can be revealed as a ripple.
+  patch(i) {
+    const { P } = this, t = P.target[i], seen = new Uint8Array(P.n), rings = [];
+    let ring = [i]; seen[i] = 1;
+    while (ring.length) {
+      rings.push(ring);
+      const next = [];
+      for (const c of ring) {
+        const x = c % P.w, y = (c - x) / P.w;
+        const nb = [x > 0 ? c - 1 : -1, x < P.w - 1 ? c + 1 : -1, y > 0 ? c - P.w : -1, y < P.h - 1 ? c + P.w : -1];
+        for (const d of nb) if (d >= 0 && !seen[d] && P.target[d] === t && !this.filled[d]) { seen[d] = 1; next.push(d); }
+      }
+      ring = next;
+    }
+    return rings;
+  }
+  bucket(i) {
+    const rings = this.patch(i).slice(1); // the tapped cell is already filled
+    if (!rings.length) { this.endStroke(); return; }
+    const total = rings.reduce((a, r) => a + r.length, 0);
+    const perFrame = Math.max(1, Math.ceil(rings.length / 16)); // the ripple lasts about a quarter second
+    const x = i % this.P.w, y = Math.floor(i / this.P.w);
+    this.hooks.onBucket?.(total, this.ox + (x + 0.5) * this.scale, this.oy + (y + 0.5) * this.scale);
+    let k = 0;
+    const step = () => {
+      if (this.dead) return;
+      for (let n = 0; n < perFrame && k < rings.length; n++, k++) for (const c of rings[k]) this.fillCell(c);
+      this.bctx.putImageData(this.bimg, 0, 0); this.draw(); this.hooks.onChange?.();
+      if (k < rings.length) this.anim = requestAnimationFrame(step);
+      else { this.anim = 0; this.endStroke(); }
+    };
+    this.finishAnim = () => {
+      cancelAnimationFrame(this.anim); this.anim = 0;
+      for (; k < rings.length; k++) for (const c of rings[k]) this.fillCell(c);
+      this.bctx.putImageData(this.bimg, 0, 0); this.requestDraw(); this.hooks.onChange?.();
+      this.endStroke();
+    };
+    this.anim = requestAnimationFrame(step);
+  }
+
   endStroke() {
     const s = this.stroke; this.stroke = null;
     if (!s || !s.length) return;
@@ -296,6 +340,8 @@ export class Board {
   local(e) { const r = this.canvas.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; }
   onPointerDown(e) {
     e.preventDefault();
+    if (this.anim) this.finishAnim(); // a ripple still running: finish it now
+    this.hooks.onTouch?.();
     try { this.canvas.setPointerCapture(e.pointerId); } catch { /* synthetic or already-gone pointer */ }
     const [x, y] = this.local(e);
     this.pointers.set(e.pointerId, { x, y, type: e.pointerType });
@@ -303,6 +349,7 @@ export class Board {
     if (this.pointers.size === 1) {
       if (this.finishedView) { this.mode = 'pan'; this.last = [x, y]; return; }
       this.mode = 'paint'; this.stroke = []; this.strokeAt = performance.now(); this.last = [x, y];
+      this.downCell = this.cellAt(x, y); this.moved = false;
       this.fillLine(x, y, x, y);
       if (!this.stroke.length && this.P.target[this.cellAt(x, y)] >= 0 && !this.filled[this.cellAt(x, y)]) this.hooks.onMiss?.(this.P.target[this.cellAt(x, y)]);
     } else if (this.pointers.size === 2) {
@@ -321,6 +368,7 @@ export class Board {
     const p = this.pointers.get(e.pointerId); if (!p) return;
     const [x, y] = this.local(e); p.x = x; p.y = y;
     if (this.mode === 'paint') {
+      if (this.cellAt(x, y) !== this.downCell) this.moved = true;
       // coalesced events give the Pencil's full path between frames
       const evs = e.getCoalescedEvents ? e.getCoalescedEvents() : [];
       if (evs.length > 1) for (const c of evs) { const [cx, cy] = this.local(c); this.fillLine(this.last[0], this.last[1], cx, cy); this.last = [cx, cy]; }
@@ -338,7 +386,12 @@ export class Board {
   }
   onPointerUp(e) {
     if (!this.pointers.delete(e.pointerId)) return;
-    if (this.mode === 'paint' && this.pointers.size === 0) { this.endStroke(); this.mode = 'none'; }
+    if (this.mode === 'paint' && this.pointers.size === 0) {
+      this.mode = 'none';
+      // a tap (no drag) on a cell that took the colour: fill its whole patch
+      if (!this.moved && this.stroke && this.stroke.length === 1) this.bucket(this.stroke[0]);
+      else this.endStroke();
+    }
     else if (this.mode === 'gesture') {
       // lifting one finger of a pinch must not start painting with the other
       if (this.pointers.size === 0) this.mode = 'none'; else this.mode = 'wait';

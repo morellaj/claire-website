@@ -1,0 +1,68 @@
+{
+  "slug": "tabby-cat-on-a-cushion--s",
+  "name": "tabby cat on a cushion",
+  "w": 40,
+  "h": 26,
+  "tags": [
+    "pets",
+    "cats"
+  ],
+  "added": "2026-11-22T18:16:04",
+  "credit": {
+    "source": "https://openclipart.org/detail/222112",
+    "author": "GDJ",
+    "licence": "CC0 1.0"
+  },
+  "made": {
+    "from": "tabby-cat-on-a-cushion.png",
+    "size": 40,
+    "colors": 12,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "variantOf": "tabby-cat-on-a-cushion",
+  "size": "little",
+  "pal": [
+    {"k":"A","hex":"#a76569"},
+    {"k":"B","hex":"#92756d"},
+    {"k":"C","hex":"#efebe2"},
+    {"k":"D","hex":"#f59b63"},
+    {"k":"E","hex":"#b9a48e"},
+    {"k":"F","hex":"#f4a948"},
+    {"k":"G","hex":"#aa8e74"},
+    {"k":"H","hex":"#ebae23"},
+    {"k":"I","hex":"#e3d8a1"},
+    {"k":"J","hex":"#f6bf10"},
+    {"k":"K","hex":"#fecc04"},
+    {"k":"L","hex":"#ad973d"}
+  ],
+  "grid": [
+    "...............BBGBBBB..................",
+    "............GGBBGGGBBGGBB...............",
+    "...........BGGBBGGBBGGGGBGG....G........",
+    "..........BBGGBBGGBBGGGGGGGG.AAAGFFF.D..",
+    ".........GBBGBBBGGGGGAGGGGGGGAAALKKF....",
+    "....FFFFGGBGGBBBGGGGGAAGGBBBBGGAHKKF....",
+    "....FKJLGBBGGGGGGGGGGBBGGBBBGGGGJKKH....",
+    "....FKKBGBGGGGGGCGGGGGGGGECCCGGGGKKH....",
+    "..D.FKHBGGGGGGGCCCGGGGGEELIILLGGEJJH....",
+    "....FKLBGGGGGGGCCCEGGGGEILGELLEEEGJH....",
+    "....FKLBGGGGGGGEECEGGGEGGGAAGGGEEGKH.D..",
+    "..D.FKLGGGGGGGGGGGGGGEEGGGGGGGGLGKKH....",
+    "....FKHGGGGGGGGGGGGGGGEGGGGGGGGLKKKH....",
+    "....HKHGGBGGBGGBBGGGGGGGGGGGGGGLKKKF.D..",
+    ".D.DJJHHBBGGBBGGGLLGGGGGGGGGGGHHHJJF....",
+    "...FJJHHHBGGGGGGGILGGGGGECCIIIHHHJJF....",
+    "...FJKHHHHHGGGGGCCCIFGGGECCCCHHHHKKF....",
+    "...FJKKJJHHHHHHCCCCIHHHHHCCCCHJJKKKH....",
+    ".D.FJKKKKKJJJJHFIIIHHHHHHHHJJKKKKKKHD...",
+    "...FJKKKKKKKKKKJJJJJJJKKKKKKKKKKKKKJF...",
+    "...FJKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKJF.D.",
+    ".D.FJKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKJF...",
+    "...DHKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKHD...",
+    "....HHJJJJHHHFFFFFFFFFFFFFFFHHHHHHHH....",
+    ".....DDF.............................D..",
+    "..D....................................."
+  ]
+}

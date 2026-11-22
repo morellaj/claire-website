@@ -1,0 +1,71 @@
+{
+  "slug": "green-sea-turtle--s",
+  "name": "sea turtle",
+  "w": 40,
+  "h": 30,
+  "tags": [
+    "animals",
+    "sea"
+  ],
+  "added": "2026-11-22T18:08:50",
+  "credit": {
+    "source": "https://commons.wikimedia.org/wiki/File:Vector_turtle.svg",
+    "author": "Clker-Free-Vector-Images on Pixabay",
+    "licence": "CC0 1.0"
+  },
+  "made": {
+    "from": "green-sea-turtle.png",
+    "size": 40,
+    "colors": 14,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "variantOf": "green-sea-turtle",
+  "size": "little",
+  "pal": [
+    {"k":"A","hex":"#a6e862"},
+    {"k":"B","hex":"#a6cc76"},
+    {"k":"C","hex":"#90e23f"},
+    {"k":"D","hex":"#8bba4d"},
+    {"k":"E","hex":"#7cca2f"},
+    {"k":"F","hex":"#78d121"},
+    {"k":"G","hex":"#5fb50d"},
+    {"k":"H","hex":"#449723"},
+    {"k":"I","hex":"#519f07"},
+    {"k":"J","hex":"#328930"},
+    {"k":"K","hex":"#07692f"}
+  ],
+  "grid": [
+    ".............................II.........",
+    ".............................IGGG.......",
+    ".......GG....................IGGGF......",
+    ".......GGG..GEFFCCCFFCCCGG....GGGF......",
+    ".......GGGGCCCFFAAFFFAACCCCC..GGGFG.....",
+    "........GFFCCFFAAFFFAAFCFAAFFGGGGFG.....",
+    "........FFCCFFCCCFFAAFFFAAFCFCFGGF......",
+    ".......FFFFFCCFFFFFCCFFAAFFFCCFGGG......",
+    ".......FFFFCCFFCCCFFFFFCCFFCFFFFGG......",
+    ".......FFFCCCFCCCCFFCCFFFFFCFFFHG.......",
+    ".......FFFCCFFCCCCFCCCCCCCFCFFKK........",
+    "......IFFFCCFCCCCFFCCCFFAAFFFEKKK.......",
+    "...GGGGGFFFFFCCCCFCCCCFCCCCFFGKKKJJJJJ..",
+    "..FGGGGGGFFFFCCCFFCCCFFCCCFFFHKJJJJHHHH.",
+    ".GGFFGGGGGFFFFFCFFCCCFFCCCFFEHHDBBJHHHHH",
+    ".GGFFFGGG..FFFFFFFCCCFCCCFFFED..BBBDJJE.",
+    "............FFFFCFFFFFFFFFEEDD....BDDDD.",
+    "...............FCFFFFCCFEEIID...........",
+    "..................EEEEEEIIII............",
+    ".......................IIIGG............",
+    ".......................IIGGG............",
+    "......................IIGGGG............",
+    "......................IGGGFG............",
+    "......................GGGGF.............",
+    ".....................GGGGGF.............",
+    "....................GGGGGF..............",
+    "....................GGGG................",
+    "...................GGGG.................",
+    "..................GGG...................",
+    "..................I....................."
+  ]
+}

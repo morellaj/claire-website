@@ -1,0 +1,69 @@
+{
+  "slug": "candy-cupcakes--s",
+  "name": "candy cupcakes",
+  "w": 40,
+  "h": 25,
+  "tags": [
+    "food",
+    "cupcakes"
+  ],
+  "added": "2026-11-22T18:04:58",
+  "credit": {
+    "source": "https://commons.wikimedia.org/wiki/File:Colorful_candy_cupcakes_(Unsplash).jpg",
+    "author": "Viktor Forgacs",
+    "licence": "CC0 1.0"
+  },
+  "made": {
+    "from": "candy-cupcakes.jpeg",
+    "size": 40,
+    "colors": 14,
+    "crop": "0,0.08,1,0.92",
+    "pop": 1,
+    "smooth": 0
+  },
+  "variantOf": "candy-cupcakes",
+  "size": "little",
+  "pal": [
+    {"k":"A","hex":"#c04462"},
+    {"k":"B","hex":"#af222b"},
+    {"k":"C","hex":"#811c22"},
+    {"k":"D","hex":"#58231b"},
+    {"k":"E","hex":"#e1cdc4"},
+    {"k":"F","hex":"#bc7e64"},
+    {"k":"G","hex":"#a09475"},
+    {"k":"H","hex":"#b86c2c"},
+    {"k":"I","hex":"#795b46"},
+    {"k":"J","hex":"#8b4e2c"},
+    {"k":"K","hex":"#1c1412"},
+    {"k":"L","hex":"#ca9d13"},
+    {"k":"M","hex":"#919641"},
+    {"k":"N","hex":"#a77fa3"}
+  ],
+  "grid": [
+    "DDDDJJJJHLLJIIGGIJLIHHFNNGGJKKKKKKKKKKDD",
+    "DDDDJJJHHHLHHIGGIJLIHBBIIHHHKKKKKKKKKKKK",
+    "DDDDJJJNHHLHHIJJGGHFHBBJJJIIJKKKKNKKKKKK",
+    "DDDDJJJANHLHBJJGGGJFHHBNNJIIBHHHBNFKKKKK",
+    "IIIIIIDDJJFFJJJGGGDFHHDIIJLLAAHMMJHHHKKK",
+    "GGGIKKCDJJFBBJJIIBBJJCCBBBLLFFFFFFHHHCKK",
+    "IIIIKKCBJFFBBFFFFCCJCBBFFBHHFFFFFJJJCCKK",
+    "DIIIKKCEEEFFEEEEFFCCCBBMMHHHGGGFFDDDBCKK",
+    "DIIIDDEEEEEEEEEEEFCCCHLMHHHHGGGDDDBBBCKK",
+    "DDJJJEEEEEEEEEEEEFIGHAAAHMMFFFJCCCBBBCKK",
+    "DDJJJEEEEEEEEEEEEFIHHAAABMMLLHJCCBBBBCKK",
+    "IIJJAEEEEEEEEEEEFHHHHAAHLLJLLHJCCCCCBDKK",
+    "IIIEAAEEEEEEEEEEFBHHNNCHHHJJLHJBDCCCDDKK",
+    "IIEENAAANNNNENNFFBBBNAADDJJJJJBBDDDDDDGD",
+    "JMMENAAAAAAAAAAAFFBBCCJJDDDCCBBCDDDDDEEJ",
+    "FEEEEAAAAAAAAAAAFFBBBBBBBBBBBBBCDDDDEEEG",
+    "EEEEEAAAAAAAAAACCFFBBBBBBBCCBBBDDIEEEEEG",
+    "EEEEEACCAABBBBBBCFFBBBBBBBBBBBBGEEEEEEEG",
+    "EEEEEAAAABBBBBBBCCNBBBBBBBBBCCCGEEEEEEEG",
+    "EEEEEGAAAAABBBBBNNNNCCCCCCCCCCCGEEEEEEEG",
+    "JEEEEEEAABBBBBAANNNNNCCCCCCCCCEEEEEEEEGG",
+    "JEEEEEENNAAAAANNNNNNNNCCCCCCCEEEEEEEEGGG",
+    "IIEEEEEEEENNNENNNNNNNNNDDDDEEEEEEEEEEGGG",
+    "FFIEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEGG",
+    "IIIIEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEG"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "red-plums--s",
+  "name": "shiny plums",
+  "w": 40,
+  "h": 21,
+  "tags": [
+    "food",
+    "fruit"
+  ],
+  "added": "2026-11-22T18:27:58",
+  "credit": {
+    "source": "https://commons.wikimedia.org/wiki/File:Red-Plums.jpg",
+    "author": "Evan-Amos",
+    "licence": "CC0 1.0"
+  },
+  "made": {
+    "from": "red-plums.img",
+    "size": 40,
+    "colors": 13,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "variantOf": "red-plums",
+  "size": "little",
+  "pal": [
+    {"k":"A","hex":"#f6f1f0"},
+    {"k":"B","hex":"#d2aba2"},
+    {"k":"C","hex":"#aa7b7e"},
+    {"k":"D","hex":"#aa293c"},
+    {"k":"E","hex":"#91070d"},
+    {"k":"F","hex":"#5e2e35"},
+    {"k":"G","hex":"#630713"},
+    {"k":"H","hex":"#eab647"},
+    {"k":"I","hex":"#c38f6a"},
+    {"k":"J","hex":"#e2a610"},
+    {"k":"K","hex":"#b97c38"},
+    {"k":"L","hex":"#cf890f"},
+    {"k":"M","hex":"#b35d09"}
+  ],
+  "grid": [
+    "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "AAAAAAAAAAAAAAAAAAAAAAAAAAAAIKKKIIAAAAAA",
+    "AAAAAAAAABBAAAAAAAAAAAAAAAMMMLLLLLLAAAAA",
+    "AAAAAAAEEEEEEAAAAAAAAAAAMLLLJJJJJJJIAAAA",
+    "AAAAAGEEEEEEEEEAAAAAAAABELJJJJJJJJJLLAAA",
+    "AAAAGGEEEEEEEEEEAAAAAABELLJJJJJJJJJLLMAA",
+    "AAAGGEEEDEEDEEEEEAAAADMLLJJJJHHHJJJJLMAA",
+    "AAGGGEDDDDDDDEEEEEAABMMLJJJJHHHHJJJJLMCA",
+    "ACGGGGDDDDDDDEEEEEAABMLLJJHHHLLHLLLLLMDA",
+    "AFGGGGDDDEEDDEEEEEDAIMLJJHHHKKKKHLLLLMDA",
+    "AFGGGGEEEEEEEEEEEEGAIMLJJHHJKKKKHMLLJLLA",
+    "AFFGGGGEEEEEEEEEEEFAIMLJJJJKKKKKMMLJJLLA",
+    "AFFGGGGEEEEEEEEEEECAIMLJJHKKKKKMMJJJJLLA",
+    "AAFFGGGGEEEEEEEEEEAAAMLLJHHMMMMLLJJJJLLA",
+    "AAFFFGGGGGEEEEEEEEAAAMELLJHJJLLJJJJJJLAA",
+    "AAAFFFGGGGGGEEEEEAAAAAMMLJJJJJJJJJJJJLAA",
+    "AAAAFFFGGGGGEEEEAAAAAAAMLLJJJJJJJJJJLAAA",
+    "AAAAAFFFGGGGGGDAAAAAAAAALLLLJJJJLLMAAAAA",
+    "AAAAAAAFFGGGGGAAAAAAAAAAAKMMLLMMMKAAAAAA",
+    "AAAAAAAABBBBBAAAAAAAAAAAAAAIIIIBBAAAAAAA",
+    "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  ]
+}
