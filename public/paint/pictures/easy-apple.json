@@ -1,0 +1,51 @@
+{
+  "slug": "easy-apple",
+  "name": "red apple",
+  "w": 20,
+  "h": 20,
+  "tags": [
+    "little-sister"
+  ],
+  "added": "2026-11-23T00:41:44",
+  "credit": {
+    "source": "drawn for this site",
+    "author": null,
+    "licence": "own (drawn for this site)"
+  },
+  "made": {
+    "from": "apple.svg",
+    "size": 20,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "pal": [
+    {"k":"A","hex":"#e73935"},
+    {"k":"B","hex":"#c04c33"},
+    {"k":"C","hex":"#8c622e"},
+    {"k":"D","hex":"#3db344"}
+  ],
+  "grid": [
+    "....................",
+    "....................",
+    ".........CC.DDDD....",
+    ".........CCDDDDD....",
+    ".........CCDDDD.....",
+    ".....AAAABBBBAA.....",
+    "...AAAAAAAAAAAAAA...",
+    "...AAAAAAAAAAAAAA...",
+    "..AAAAAAAAAAAAAAAA..",
+    "..AAAAAAAAAAAAAAAA..",
+    "..AAAAAAAAAAAAAAAA..",
+    "..AAAAAAAAAAAAAAAA..",
+    "..AAAAAAAAAAAAAAAA..",
+    "..AAAAAAAAAAAAAAAA..",
+    "...AAAAAAAAAAAAAA...",
+    "...AAAAAAAAAAAAAA...",
+    "....AAAAAAAAAAAA....",
+    ".....AAAAAAAAAA.....",
+    "....................",
+    "...................."
+  ]
+}

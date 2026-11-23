@@ -1,0 +1,51 @@
+{
+  "slug": "easy-pink-heart-sunglasses",
+  "name": "pink heart sunglasses",
+  "w": 24,
+  "h": 18,
+  "tags": [
+    "little-sister",
+    "fashion",
+    "accessories"
+  ],
+  "added": "2026-11-23T00:40:30",
+  "credit": {
+    "source": "https://commons.wikimedia.org/wiki/File:Pink_heart_shaped_sun_glass.svg",
+    "author": null,
+    "licence": "CC0 1.0"
+  },
+  "made": {
+    "from": "pink-heart-sunglasses.png",
+    "size": 24,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 1
+  },
+  "pal": [
+    {"k":"A","hex":"#533467"},
+    {"k":"B","hex":"#973c81"},
+    {"k":"C","hex":"#dd79b4"},
+    {"k":"D","hex":"#e23694"}
+  ],
+  "grid": [
+    "........................",
+    "........................",
+    "........................",
+    "........................",
+    "........................",
+    "..AABBBBBA....CCCAABBB..",
+    "..BCCDDDDDA..ACCCDDDDD..",
+    "..BCCCDDDDA..ADCCCDDDD..",
+    "..BDCCCDDDA...DDCCCDDD..",
+    "..ADDCCCDD....DDCCCCDA..",
+    "...DDDCCCA....ADDCCCB...",
+    "....DDDBA......ADBCC....",
+    ".....AB..........BA.....",
+    "........................",
+    "........................",
+    "........................",
+    "........................",
+    "........................"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "easy-fish",
+  "name": "orange fish",
+  "w": 20,
+  "h": 20,
+  "tags": [
+    "little-sister"
+  ],
+  "added": "2026-11-23T00:41:45",
+  "credit": {
+    "source": "drawn for this site",
+    "author": null,
+    "licence": "own (drawn for this site)"
+  },
+  "made": {
+    "from": "fish.svg",
+    "size": 20,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "pal": [
+    {"k":"A","hex":"#ffffff"},
+    {"k":"B","hex":"#ffcd9b"},
+    {"k":"C","hex":"#fd8d18"},
+    {"k":"D","hex":"#493421"}
+  ],
+  "grid": [
+    "....................",
+    "....................",
+    "....................",
+    "....................",
+    "....................",
+    ".....CCCCBABC.......",
+    "...CCCCCCBABCC....CC",
+    "..CCDCCCCBABCCC..CC.",
+    ".CCDDDCCCBABCCCCCCC.",
+    ".CCDDDCCCBABCCCCCCC.",
+    ".CCCCCCCCBABCCCCCCC.",
+    ".CCCCCCCCBABCCCCCCC.",
+    "..CCCCCCCBABCCC..CC.",
+    "...CCCCCCBABCC....CC",
+    ".....CCCCBABC.......",
+    "....................",
+    "....................",
+    "....................",
+    "....................",
+    "...................."
+  ]
+}

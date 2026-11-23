@@ -1,0 +1,57 @@
+{
+  "slug": "easy-sitting-fox",
+  "name": "sitting fox",
+  "w": 23,
+  "h": 24,
+  "tags": [
+    "little-sister",
+    "animals",
+    "wild"
+  ],
+  "added": "2026-11-23T00:40:29",
+  "credit": {
+    "source": "https://openclipart.org/detail/330228/cute-cartoon-fox-colour-remix",
+    "author": "j4p4n",
+    "licence": "Public domain"
+  },
+  "made": {
+    "from": "sitting-fox.png",
+    "size": 24,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 1
+  },
+  "pal": [
+    {"k":"A","hex":"#c7c4c2"},
+    {"k":"B","hex":"#cf6824"},
+    {"k":"C","hex":"#995529"},
+    {"k":"D","hex":"#291507"}
+  ],
+  "grid": [
+    "...........D.........D.",
+    "..........DDD......CDD.",
+    "..........DDDD.BBBBDBD.",
+    "...........DDDBBBBBBBD.",
+    "...........DDBBBBBBBB..",
+    "............CBCCCBBB...",
+    "............CCACCCCC...",
+    ".............AAAAAAA...",
+    ".............CCAAAA....",
+    ".............BBBAA.....",
+    "............BBBBBA.....",
+    "...........BBBBBBA.....",
+    "...........BBBBBBC.....",
+    "...........BBBBBBC.....",
+    "...........BBBBBB......",
+    "...........BBBBBB......",
+    "..........BBBBBBB......",
+    "..........BBBBBBBBB....",
+    "....AACB.CBBBBBBBBB....",
+    "...AAACBCCBBBBBBBBB....",
+    "..AAAACBBBBBBBBBBBD....",
+    ".AAAAAABBBBBBBBBBDD....",
+    ".AAAAAABBBBBBBBBBDDD...",
+    "..AAAACCCC........DD..."
+  ]
+}

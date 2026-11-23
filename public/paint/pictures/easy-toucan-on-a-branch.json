@@ -1,0 +1,57 @@
+{
+  "slug": "easy-toucan-on-a-branch",
+  "name": "toucan",
+  "w": 18,
+  "h": 24,
+  "tags": [
+    "little-sister",
+    "animals",
+    "birds"
+  ],
+  "added": "2026-11-23T00:40:31",
+  "credit": {
+    "source": "https://commons.wikimedia.org/wiki/File:Toucan_by_gnokii.svg",
+    "author": "gnokii",
+    "licence": "CC0 1.0"
+  },
+  "made": {
+    "from": "toucan-on-a-branch.png",
+    "size": 24,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 1
+  },
+  "pal": [
+    {"k":"A","hex":"#ce5d24"},
+    {"k":"B","hex":"#523e1b"},
+    {"k":"C","hex":"#dace45"},
+    {"k":"D","hex":"#122723"}
+  ],
+  "grid": [
+    "..................",
+    "..AACCCCCCBBD.....",
+    ".ACCCCAAAABBCD....",
+    ".AC.....AABCCC....",
+    ".....CCCCCBCCCD...",
+    "...CCCC..CCCCCD...",
+    "..A......DCCCCDD..",
+    "........DDCCCCDD..",
+    "........DDCCCCDDD.",
+    "........DDDBBDDDD.",
+    "........DDDDDDDDD.",
+    "........DDDDDDDDD.",
+    "........DDDDDDDDD.",
+    "......BBBDDDDDDD..",
+    ".......BBBDDDDDD..",
+    ".........DDDBDDD..",
+    ".........DDDBBBB..",
+    ".........DDDD...BB",
+    ".........DDDD.....",
+    "........DDDDD.....",
+    "........DDDDD.....",
+    ".........DDDD.....",
+    ".........DDD......",
+    ".................."
+  ]
+}

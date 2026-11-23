@@ -1,0 +1,51 @@
+{
+  "slug": "easy-mushroom",
+  "name": "spotty mushroom",
+  "w": 20,
+  "h": 20,
+  "tags": [
+    "little-sister"
+  ],
+  "added": "2026-11-23T00:41:46",
+  "credit": {
+    "source": "drawn for this site",
+    "author": null,
+    "licence": "own (drawn for this site)"
+  },
+  "made": {
+    "from": "mushroom.svg",
+    "size": 20,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "pal": [
+    {"k":"A","hex":"#fefbfb"},
+    {"k":"B","hex":"#f18f8d"},
+    {"k":"C","hex":"#e83e3a"},
+    {"k":"D","hex":"#f6deb3"}
+  ],
+  "grid": [
+    "....................",
+    "....................",
+    ".......CCCCCC.......",
+    ".....CCCCCCBBCC.....",
+    "....CCCCCCBAABCC....",
+    "...CCBBCCCBAABCCC...",
+    "..CCBAABCCCBBCCCCC..",
+    "..CCBAABCCCCCCCCCC..",
+    ".CCCCBBCCCCCCCAACCC.",
+    ".CCCCCCCCBCCCCAACCC.",
+    ".CCCCCCCCCCCCCCCCCC.",
+    ".......DDDDDD.......",
+    ".......DDDDDD.......",
+    ".......DDDDDD.......",
+    ".......DDDDDD.......",
+    ".......DDDDDD.......",
+    ".......DDDDDD.......",
+    ".......DDDDDD.......",
+    ".......DDDDDD.......",
+    "...................."
+  ]
+}

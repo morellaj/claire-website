@@ -147,6 +147,7 @@ async function showGallery() {
 // Gallery shelves, in order. A picture's first tag picks its shelf.
 const SHELVES = [
   ['mine', 'my pictures 📷'],
+  ['little-sister', 'little sister 🧸'],
   ['pets', 'pets 🐾'],
   ['animals', 'animals 🦋'],
   ['fashion', 'fashion 👗'],

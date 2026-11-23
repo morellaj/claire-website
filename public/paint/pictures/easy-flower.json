@@ -1,0 +1,51 @@
+{
+  "slug": "easy-flower",
+  "name": "pink flower",
+  "w": 20,
+  "h": 20,
+  "tags": [
+    "little-sister"
+  ],
+  "added": "2026-11-23T00:41:42",
+  "credit": {
+    "source": "drawn for this site",
+    "author": null,
+    "licence": "own (drawn for this site)"
+  },
+  "made": {
+    "from": "flower.svg",
+    "size": 20,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "pal": [
+    {"k":"A","hex":"#ff8a8c"},
+    {"k":"B","hex":"#ffcf42"},
+    {"k":"C","hex":"#3eb445"},
+    {"k":"D","hex":"#fe72aa"}
+  ],
+  "grid": [
+    "....................",
+    "........DDDD........",
+    ".......DDDDDD.......",
+    ".......DDDDDD.......",
+    "......DDDDDDDD......",
+    "....DDDDDBBDDDDD....",
+    "....DDDABBBBADDD....",
+    "....DDDABBBBADDD....",
+    "....DDDABBBBADDD....",
+    "....DDDDDBBDDDDD....",
+    "......DDDDDDDD......",
+    ".......DDDDDD.......",
+    ".......DDDDDD.......",
+    "........DDDD........",
+    ".........CC...CC....",
+    ".........CC.CCCC....",
+    ".........CCCCCC.....",
+    ".........CCCC.......",
+    ".........CC.........",
+    "...................."
+  ]
+}

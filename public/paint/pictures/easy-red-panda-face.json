@@ -1,0 +1,53 @@
+{
+  "slug": "easy-red-panda-face",
+  "name": "red panda",
+  "w": 24,
+  "h": 20,
+  "tags": [
+    "little-sister",
+    "animals",
+    "wild"
+  ],
+  "added": "2026-11-23T00:40:32",
+  "credit": {
+    "source": "https://commons.wikimedia.org/wiki/File:Red_panda.svg",
+    "author": "revzack",
+    "licence": "CC0 1.0"
+  },
+  "made": {
+    "from": "red-panda-face.png",
+    "size": 24,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 1
+  },
+  "pal": [
+    {"k":"A","hex":"#dcd7d5"},
+    {"k":"B","hex":"#bea28f"},
+    {"k":"C","hex":"#c18353"},
+    {"k":"D","hex":"#7c523b"}
+  ],
+  "grid": [
+    ".AA.B.....BBBB.....B.AA.",
+    "AAAAAAABBBCCCCBBBAAAAAAA",
+    "AAAAAAABCCCCCCCCBAAAAAAA",
+    ".AAAAAACCCCCCCCCCAAAAAA.",
+    ".AAAACCCCCCCCCCCCCCAAAA.",
+    ".AAAACCCCCCCCCCCCCCAAAA.",
+    "..AACCCCCCCCCCCCCCCCAA..",
+    "..AACCCCCCCCCCCCCCCCAA..",
+    ".AACCCCCCCCCCCCCCCCCCAA.",
+    ".BBCCBBCBBBCCBBBCBBCCBB.",
+    "...CCBBDDDBBBBDDDBBCC...",
+    "...CCBBDDDAAAADDDBBCC...",
+    "....CBBDDAAAAAADDBBC....",
+    ".....CCDAAAAAAAADCC.....",
+    "......CDAAADDAAADC......",
+    "........BAADDAAB........",
+    "..........BBBB..........",
+    "...........BB...........",
+    "........................",
+    "........................"
+  ]
+}

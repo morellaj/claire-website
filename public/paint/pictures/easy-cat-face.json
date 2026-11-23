@@ -1,0 +1,51 @@
+{
+  "slug": "easy-cat-face",
+  "name": "kitty face",
+  "w": 20,
+  "h": 20,
+  "tags": [
+    "little-sister"
+  ],
+  "added": "2026-11-23T00:41:44",
+  "credit": {
+    "source": "drawn for this site",
+    "author": null,
+    "licence": "own (drawn for this site)"
+  },
+  "made": {
+    "from": "cat-face.svg",
+    "size": 20,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "pal": [
+    {"k":"A","hex":"#9f9f9f"},
+    {"k":"B","hex":"#707070"},
+    {"k":"C","hex":"#242424"},
+    {"k":"D","hex":"#e599bf"}
+  ],
+  "grid": [
+    "....................",
+    "....................",
+    "....................",
+    "...AA..........AA...",
+    "...AAA........AAA...",
+    "...ADDAA....AADDA...",
+    "...ADDAAAAAAAADDA...",
+    "....AAAAAAAAAAAA....",
+    "...AAAAAAAAAAAAAA...",
+    "...AAAAAAAAAAAAAA...",
+    "..AAABCCAAAACCBAAA..",
+    "..AAABCCAAAACCBAAA..",
+    "..AAAAAAAAAAAAAAAA..",
+    "..AAAAAAAAAAAAAAAA..",
+    "...AAAAAADDAAAAAA...",
+    "...AAAAAAAAAAAAAA...",
+    "....AAAAAAAAAAAA....",
+    "......AAAAAAAA......",
+    "....................",
+    "...................."
+  ]
+}

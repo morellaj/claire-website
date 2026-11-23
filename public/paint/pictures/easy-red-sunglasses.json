@@ -1,0 +1,47 @@
+{
+  "slug": "easy-red-sunglasses",
+  "name": "red sunglasses",
+  "w": 24,
+  "h": 14,
+  "tags": [
+    "little-sister",
+    "fashion",
+    "sunglasses"
+  ],
+  "added": "2026-11-23T00:40:29",
+  "credit": {
+    "source": "https://openclipart.org/detail/171225",
+    "author": "diamonjohn",
+    "licence": "Public domain"
+  },
+  "made": {
+    "from": "red-sunglasses.png",
+    "size": 24,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 1
+  },
+  "pal": [
+    {"k":"A","hex":"#444545"},
+    {"k":"B","hex":"#d7113a"},
+    {"k":"C","hex":"#a72a44"},
+    {"k":"D","hex":"#28171a"}
+  ],
+  "grid": [
+    ".....CCCCB..............",
+    "...DDAAAAB....BCCCB.....",
+    "...DDDDDDB..BDDDAAACCC..",
+    "..DDDDDDDBBBBDDDAAAAABC.",
+    "..DDDDDDDB.BCDDDDAAAAABB",
+    ".CDDDDDDBB.BCDDDDDAAAADB",
+    ".CDDDDDDBBBBCDDDDDDAADDB",
+    ".CDDDDCBBB.BCDDDDDDDDDDB",
+    ".CDDCCCAAA..CDDDDDDDDDDB",
+    "..BBCCAAAAAACCDDDDDDDDDB",
+    "....AAAAAAAAABBDDDDDDDB.",
+    "........AAAAAABCCCCCCB..",
+    "..............AACBBBB...",
+    "........................"
+  ]
+}

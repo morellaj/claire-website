@@ -1,0 +1,50 @@
+{
+  "slug": "easy-ice-cream",
+  "name": "ice cream",
+  "w": 20,
+  "h": 20,
+  "tags": [
+    "little-sister"
+  ],
+  "added": "2026-11-23T00:41:45",
+  "credit": {
+    "source": "drawn for this site",
+    "author": null,
+    "licence": "own (drawn for this site)"
+  },
+  "made": {
+    "from": "ice-cream.svg",
+    "size": 20,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "pal": [
+    {"k":"A","hex":"#eb3c38"},
+    {"k":"B","hex":"#e6a75c"},
+    {"k":"C","hex":"#fe90c7"}
+  ],
+  "grid": [
+    ".........AA.........",
+    "........AAAA........",
+    "........AAAA........",
+    ".......CCAACC.......",
+    "......CCCCCCCC......",
+    ".....CCCCCCCCCC.....",
+    ".....CCCCCCCCCC.....",
+    ".....CCCCCCCCCC.....",
+    ".....CCCCCCCCCC.....",
+    ".....CCCCCCCCCC.....",
+    ".....CCCCCCCCCC.....",
+    "......CCCCCCCC......",
+    ".......CCCCCC.......",
+    ".......BBBBBB.......",
+    "........BBBB........",
+    "........BBBB........",
+    ".........BB.........",
+    ".........BB.........",
+    ".........BB.........",
+    "...................."
+  ]
+}

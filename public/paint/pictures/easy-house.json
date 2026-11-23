@@ -1,0 +1,51 @@
+{
+  "slug": "easy-house",
+  "name": "little house",
+  "w": 20,
+  "h": 20,
+  "tags": [
+    "little-sister"
+  ],
+  "added": "2026-11-23T00:41:44",
+  "credit": {
+    "source": "drawn for this site",
+    "author": null,
+    "licence": "own (drawn for this site)"
+  },
+  "made": {
+    "from": "house.svg",
+    "size": 20,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "pal": [
+    {"k":"A","hex":"#e94536"},
+    {"k":"B","hex":"#99692d"},
+    {"k":"C","hex":"#fdd340"},
+    {"k":"D","hex":"#69a7dd"}
+  ],
+  "grid": [
+    "....................",
+    "....................",
+    ".........AA.........",
+    "........AAAA........",
+    "......AAAAAAAA......",
+    ".....AAAAAAAAAA.....",
+    "....AAAAAAAAAAAA....",
+    "...AAAAAAAAAAAAAA...",
+    "..AAAAAAAAAAAAAAAA..",
+    "..AAAAAAAAAAAAAAAA..",
+    "...CCCCCCCCCCCCCC...",
+    "...CDDDCCCCCCDDDC...",
+    "...CDDDCCBBCCDDDC...",
+    "...CDDDCBBBBCDDDC...",
+    "...CCCCCBBBBCCCCC...",
+    "...CCCCCBBBBCCCCC...",
+    "...CCCCCBBBBCCCCC...",
+    "...CCCCCBBBBCCCCC...",
+    "...CCCCCBBBBCCCCC...",
+    "...................."
+  ]
+}

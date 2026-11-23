@@ -1,0 +1,51 @@
+{
+  "slug": "easy-heart",
+  "name": "pink heart",
+  "w": 20,
+  "h": 20,
+  "tags": [
+    "little-sister"
+  ],
+  "added": "2026-11-23T00:41:43",
+  "credit": {
+    "source": "drawn for this site",
+    "author": null,
+    "licence": "own (drawn for this site)"
+  },
+  "made": {
+    "from": "heart.svg",
+    "size": 20,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "pal": [
+    {"k":"A","hex":"#fff6fa"},
+    {"k":"B","hex":"#ffa5c9"},
+    {"k":"C","hex":"#fa6aa4"},
+    {"k":"D","hex":"#c81a5e"}
+  ],
+  "grid": [
+    "....................",
+    "....................",
+    "....DDDDD..DDDDD....",
+    "..DDDCCCDDDDCCCDDD..",
+    "..DCCCCCCDDCCCCCCD..",
+    ".DDCCCCCCCCCCCCCCDD.",
+    ".DCCCCCCCCCCCCCCCCD.",
+    ".DCCCAABCCCCCCCCCCD.",
+    ".DDCCAABCCCCCCCCCDD.",
+    "..DCCCCCCCCCCCCCCD..",
+    "..DDCCCCCCCCCCCCDD..",
+    "...DDCCCCCCCCCCDD...",
+    "....DDCCCCCCCCDD....",
+    ".....DDCCCCCCDD.....",
+    "......DDCCCCDD......",
+    ".......DDCCDD.......",
+    "........DDDD........",
+    ".........DD.........",
+    "....................",
+    "...................."
+  ]
+}

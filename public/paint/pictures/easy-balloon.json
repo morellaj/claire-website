@@ -1,0 +1,51 @@
+{
+  "slug": "easy-balloon",
+  "name": "purple balloon",
+  "w": 20,
+  "h": 20,
+  "tags": [
+    "little-sister"
+  ],
+  "added": "2026-11-23T00:41:45",
+  "credit": {
+    "source": "drawn for this site",
+    "author": null,
+    "licence": "own (drawn for this site)"
+  },
+  "made": {
+    "from": "balloon.svg",
+    "size": 20,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "pal": [
+    {"k":"A","hex":"#57555a"},
+    {"k":"B","hex":"#faf6ff"},
+    {"k":"C","hex":"#cba2ff"},
+    {"k":"D","hex":"#a359ff"}
+  ],
+  "grid": [
+    "....................",
+    ".......DDDDDD.......",
+    "......DDDDDDDD......",
+    ".....DCCDDDDDDD.....",
+    ".....DBBCDDDDDD.....",
+    "....DDBBCDDDDDDD....",
+    "....DDBBCDDDDDDD....",
+    "....DDCCDDDDDDDD....",
+    "....DDDDDDDDDDDD....",
+    "....DDDDDDDDDDDD....",
+    "....DDDDDDDDDDDD....",
+    ".....DDDDDDDDDD.....",
+    ".....DDDDDDDDDD.....",
+    "......DDDDDDDD......",
+    ".......DDDDDD.......",
+    ".........DD.........",
+    ".........AA.........",
+    "..........A.........",
+    "..........A.........",
+    "..........A........."
+  ]
+}

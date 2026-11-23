@@ -1,0 +1,50 @@
+{
+  "slug": "easy-star",
+  "name": "yellow star",
+  "w": 20,
+  "h": 20,
+  "tags": [
+    "little-sister"
+  ],
+  "added": "2026-11-23T00:41:43",
+  "credit": {
+    "source": "drawn for this site",
+    "author": null,
+    "licence": "own (drawn for this site)"
+  },
+  "made": {
+    "from": "star.svg",
+    "size": 20,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "pal": [
+    {"k":"A","hex":"#fab424"},
+    {"k":"B","hex":"#f79306"},
+    {"k":"C","hex":"#fed23e"}
+  ],
+  "grid": [
+    "....................",
+    ".........BB.........",
+    ".........BB.........",
+    "........BBBB........",
+    "........BAAB........",
+    ".......BBCCBB.......",
+    ".......BBCCBB.......",
+    "BBBBBBBBCCCCBBBBBBBB",
+    ".BBBCCCCCCCCCCCCBBB.",
+    "..BBBCCCCCCCCCCBBB..",
+    "...BBBCCCCCCCCBBB...",
+    ".....BACCCCCCAB.....",
+    ".....BACCCCCCAB.....",
+    ".....BACCCCCCAB.....",
+    ".....BCCCBBCCCB.....",
+    "....BBCBBBBBBCBB....",
+    "....BBBB....BBBB....",
+    "....BBB......BBB....",
+    "....B..........B....",
+    "...................."
+  ]
+}

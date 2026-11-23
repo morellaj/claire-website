@@ -1,0 +1,50 @@
+{
+  "slug": "easy-sun",
+  "name": "sunshine",
+  "w": 20,
+  "h": 20,
+  "tags": [
+    "little-sister"
+  ],
+  "added": "2026-11-23T00:41:42",
+  "credit": {
+    "source": "drawn for this site",
+    "author": null,
+    "licence": "own (drawn for this site)"
+  },
+  "made": {
+    "from": "sun.svg",
+    "size": 20,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "pal": [
+    {"k":"A","hex":"#ff921b"},
+    {"k":"B","hex":"#ff8c1a"},
+    {"k":"C","hex":"#ffd43f"}
+  ],
+  "grid": [
+    ".........AA.........",
+    ".........AA.........",
+    ".........AA.........",
+    "...AB....AA....BA...",
+    "...BAB...AA...BAB...",
+    "....BA..CCCC..AB....",
+    "......CCCCCCCC......",
+    "......CCCCCCCC......",
+    ".....CCCCCCCCCC.....",
+    "AAAAACCCCCCCCCCAAAAA",
+    "AAAAACCCCCCCCCCAAAAA",
+    ".....CCCCCCCCCC.....",
+    "......CCCCCCCC......",
+    "......CCCCCCCC......",
+    "....BA..CCCC..AB....",
+    "...BAB...AA...BAB...",
+    "...AB....AA....BA...",
+    ".........AA.........",
+    ".........AA.........",
+    ".........AA........."
+  ]
+}

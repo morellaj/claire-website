@@ -1,0 +1,51 @@
+{
+  "slug": "easy-rainbow",
+  "name": "rainbow",
+  "w": 20,
+  "h": 20,
+  "tags": [
+    "little-sister"
+  ],
+  "added": "2026-11-23T00:41:43",
+  "credit": {
+    "source": "drawn for this site",
+    "author": null,
+    "licence": "own (drawn for this site)"
+  },
+  "made": {
+    "from": "rainbow.svg",
+    "size": 20,
+    "colors": 4,
+    "crop": null,
+    "pop": 1,
+    "smooth": 0
+  },
+  "pal": [
+    {"k":"A","hex":"#ff524e"},
+    {"k":"B","hex":"#fdcb40"},
+    {"k":"C","hex":"#f6f7f3"},
+    {"k":"D","hex":"#51a1f8"}
+  ],
+  "grid": [
+    "....................",
+    "....................",
+    "....................",
+    "....................",
+    "....................",
+    "........AAAA........",
+    ".....AAAAAAAAAA.....",
+    "....AAAAAAAAAAAA....",
+    "...AAAABBBBBBAAAA...",
+    "..AAABBBBBBBBBBAAA..",
+    ".AAABBBBCCCCBBBBAAA.",
+    ".AAABBBDDDDDDBBBAAA.",
+    ".AABBBDDDDDDDDBBBAA.",
+    "AAABBCDDD..DDDCBBAAA",
+    "AAABBCDD....DDCBBAAA",
+    ".CCCCCCCCCCCCCCCCCC.",
+    ".CCCCCCCCCCCCCCCCCC.",
+    ".CCCCCCCCCCCCCCCCCC.",
+    ".CCCCCCCCCCCCCCCCCC.",
+    "...................."
+  ]
+}
